@@ -5,6 +5,13 @@ tags: [gsoc, google summer of code]
 <div class="line"></div>
 <div class="space"></div>
 {% for repo in site.github.public_repositories %} 
-<pre>{{ repo }}</pre>
+{% if repo.fork %}{% else %}
+<div class="repo">
+  <p>{{ repo.name }}</p>
+  <p>{{ repo.description }}</p>
+  <p>{{ repo.html_url }}</p>
+  <p>{{ site.url }}/{{ repo.name }}</p>
+</div>
+{% endif %}
 {% endfor %}
 <div class="space"></div>
