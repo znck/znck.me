@@ -2,16 +2,15 @@
 layout: page
 tags: [gsoc, google summer of code]
 ---
+<div class="line"></div>
   {% for repo in site.github.public_repositories %} 
     {% if repo.fork %}{% else %}
-      <div class="line"></div>
       <div class="space"></div>
       <div style="text-align:left; width: 800px; margin: 0 auto">
         <div class="repo">
-          <h2 class="name">{{ repo.name }}</h2>
+          <h2 class="name"><a href="{{ repo.html_url }}">{{ repo.name }}</a></h2>
           <div class="desc">{{ repo.description }}</div>
-          <div class="fork">{{ repo.html_url }}</div>
-          <div class="web"><a href="{{ site.baseurl }}/{{ repo.name }}">visit</a></div>
+          <a href="{{ site.baseurl }}/{{ repo.name }}">website &rsaquo;&rsaquo;</a>
         </div>
       </div>
     {% endif %}

@@ -366,4 +366,9 @@ blockquote *{
 }
 
 .repo{
+    color: #333;
+}
+
+.repo .name{
+    color: #000;
 }
