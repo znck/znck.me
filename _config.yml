@@ -1,0 +1,59 @@
+source:			.
+destination:	./_site
+plugins:		./_plugins
+layouts:		./_layouts
+include:		['.htaccess']
+exclude:		[]
+keep_files:		['.git', '.svn']
+gems:			[]
+timezone:		nil
+encodeing:		nil
+
+#comment before pushing
+#url:			http://localhost:4000
+				#uncomment before pushing
+baseurl:		/eeg-database-for-android
+
+title:			Rahul Kadyan | GSoC 2014
+description:	Project journal for eeg-database-for-android
+
+owner:
+  name:           Rahul Kadyan
+  avatar:         bio-photo.png
+  email:          mail@rahulkadyan.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        rahulkadyan7
+  facebook:       rahulkadyan
+  github:         rahulkadyan
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:  
+
+disqus_shortname: gsoc2014
+future:			true
+show_drafts:	nil
+limit_posts:	0
+highlighter:	pygments
+
+relative_permalinks: true
+
+permalinks:		date
+paginate_path:	'/page:num'
+paginate:		1
+
+defaults:
+    -
+      scope:
+         path: ""
+      values:
+         layout: "GSoC 14 - EEG Database"
+         author: "Rahul Kadyan"
+
+links:
+    -  title:	gsoc
+       url: /
+    -  title:	blog
+       url: http://blog.rahulkadyan.com
+       external: true
+    -  title:	portfolio
+       url: http://rahulkadyan.com
+       external: true

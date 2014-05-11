@@ -1,0 +1,29 @@
+<div class="center-text" id="landing">
+    <div class="sprite me300 extra-space-32"></div>
+    <div class="para" id="landing-text">
+        <span class="extra-large dark"><a href="{{ site.url }}">Rahul Kadyan</a> </span><br>
+
+                <br>
+                <span style="color: #ff4321">Hell</span>o' World<br> I'm a programmer and I develop awesome
+                applications.<br>
+                I'm working on '<a href="http://eegdatabase.kiv.zcu.cz/" target="_blank">EEG Database</a>' - an android application from <a href="http://www.incf.org/" target="_blank">INCF</a>,<br>
+                as <a href="https://www.google-melange.com/gsoc/homepage/google/gsoc2014" target="_blank">Google Summer of Code</a> project.<br>
+                Feel free to <span class="dark"><a href="#contact">say Hi</a></span>
+    </div>
+</div>
+<div class="space"></div>
+
+<div class="line"></div>
+<div class="navigation-wrapper ">
+	<nav role="navigation" id="site-nav" class="center-text nav">
+	        {% for link in site.links %}
+			<h3 class="extra-space-32 inline">
+				{% if link.external %}
+					<a href="{{ link.url }}">{{ link.title }}</a>
+				{% else %}
+					<a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+				{% endif %} 
+			</h3>
+	        {% endfor %}
+	</nav>
+</div><!-- /.navigation-wrapper -->

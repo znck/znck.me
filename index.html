@@ -1,65 +1,79 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+---
+layout: page
+tags: [gsoc, google summer of code]
+---
+<div class="line"></div>
+<div class="space"></div>
+<h1 style="text-align: center; color: #000">Google Summer of Code 2014</h1>
+<div class="post" style="width: 1084px; margin: 16px auto auto auto">
+	{% markdown about.md %}
+</div>
+<div class="space"></div>
+{% for post in site.posts limit:1 %} 
+<div class="line"></div>
+<div class="space"></div>
+    <div class="center-text">
+        <div class="inline line-height-extra" style="max-width: 800px">
+        <nav class="pagination" role="navigation" style="width: 800px; height: 32px; color: #000">
+      {% if post.previous %}
+        <a style="float:left" href="{{ site.baseurl }}{{ post.previous.url }}#post" class="btn" title="{{ post.previous.title }}">&lsaquo; {{ post.previous.title }}</a>
+      {% endif %}
+      {% if post.next %}
+        <a style="float:right" href="{{ site.baseurl }}{{ post.next.url }}#post" class="btn" title="{{ post.next.title }}">{{ post.next.title }} &rsaquo;</a>
+      {% endif %}
+    </nav><!-- /.pagination -->
+  			<h2 class="extra-space-32 dark center-text"><a href="{{ site.baseurl }}{{ post.url }}#post">{{ post.title }}</a></h2>
+  			<div class="space"></div>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<div role="main" class="post" style="max-width: 800px; margin: 0 auto; color: #000">
+  <article class="hentry">
+    {% if post.image.feature %}<img src="{{ site.baseurl }}/assets/images/{{ post.image.feature }}" class="entry-feature-image" alt="{{ post.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if post.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a>{% endif %}{% endif %}
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <!-- <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span> -->
+        {% if post.link %}
+          <h1 class="entry-title extra-space-32 dark center-text"><a href="{{ post.link }}">{% if post.headline %}{{ post.headline }}{% else %}{{ post.title }}{% endif %} <span class="link-arrow">&rarr;</span></a></h1>
+        {% else %}
+          <h1 class="entry-title" style="font-size: 2em">{% if post.headline %}{{ post.headline }}{% else %}{{ post.title }}{% endif %}</h1>
+        {% endif %}
+      </header>
+      <footer class="entry-meta" style="font-size: 0.8em; color: #999; padding: 0 16px">
+        <!-- <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo"> --><!-- 
+        <span class="author vcard">By <span class="fn"><a class="no-style" href="{{ site.baseurl }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span> -->
+        <span class="entry-date date published"><time datetime="{{ post.date | date_to_xmlschema }}"><i class="icon-calendar-empty"></i> {{ post.date | date: "%B %d, %Y" }}</time></span>
+        {% if site.disqus_shortname and post.comments %}<span class="entry-comments"><i class="icon-comment-alt"></i> <a href="#disqus_thread">Comment</a></span>{% endif %}
+        <!-- <span><a class="no-style" href="{{ site.baseurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}"><i class="icon-link"></i> Permalink</a></span> -->
+        {% if post.share %}
+        <div style="display: inline-block; height: 32px; margin-left: 32px; color: #999">
+        Share via
+        <span class="social-share-facebook">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.baseurl }}{{ post.url }}" title="Share on Facebook" itemprop="Facebook" class="no-style"><i class="share sprite facebook-logo"></i></a></span>
+        <span class="social-share-twitter">
+            <!-- The actual URL at ethe end of HREF will be added via Javascript -->
+            <a class="no-style" href="https://twitter.com/intent/tweet?hashtags={{ post.categories | join: ',' }}&text={{ post.title }}&via={{ site.owner.twitter }}&url=" title="Share on Twitter" itemprop="Twitter"><i class="share sprite twitter-logo"></i></a></span>
+        <span class="social-share-googleplus">
+            <a class="no-style" href="https://plus.google.com/share?url=" title="Share on Google Plus" itemprop="GooglePlus"><i class="share sprite google-plus-logo"></i></a></span>
+            </div><!-- /.social-share -->{% endif %}
+      </footer>
+      <div class="entry-content">
+        {{ post.content }}
+        <div class="space"></div>
+        <nav class="pagination" role="navigation" style="width: 800px; height: 32px; color: #000">
+      {% if post.previous %}
+        <a style="float:left" href="{{ site.baseurl }}{{ post.previous.url }}#post" class="btn" title="{{ post.previous.title }}">&lsaquo; {{ post.previous.title }}</a>
+      {% endif %}
+      {% if post.next %}
+        <a style="float:right" href="{{ site.baseurl }}{{ post.next.url }}#post" class="btn" title="{{ post.next.title }}">{{ post.next.title }} &rsaquo;</a>
+      {% endif %}
+    </nav><!-- /.pagination -->
+    <div class="space"></div>
+        {% if site.disqus_shortname and post.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+      </div><!-- /.entry-content -->
 
-    <title>RAHUL KADYAN by rahulkadyan</title>
-  </head>
+      <div class="space"></div>
+    </div><!-- /.entry-wrapper -->
+  </article>
+</div>
 
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>RAHUL KADYAN</h1>
-        <h2>IF YOU&#39;RE GOOD AT SOMETHING DON&#39;T DO IT FOR FREE</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/rahulkadyan" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    
-  </body>
-</html>
+  		</div>
+{% endfor %}

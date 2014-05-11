@@ -1,1 +1,7 @@
-_site/
+*.iml
+*.properties
+target/*
+.idea/*
+_site/*
+*.DS_Store
+*.lock
