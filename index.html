@@ -9,8 +9,10 @@ tags: [gsoc, google summer of code]
       <div style="text-align:left; width: 800px; margin: 0 auto">
         <div class="repo">
           <h2 class="name"><a href="{{ repo.html_url }}">{{ repo.name }}</a></h2>
+          <div class="space"></div>
           <div class="desc">{{ repo.description }}</div>
-          <a href="{{ site.baseurl }}/{{ repo.name }}">website &rsaquo;&rsaquo;</a>
+          <div class="space"></div>
+          <a class="no-style" style="float:right" href="{{ site.baseurl }}/{{ repo.name }}">website &rsaquo;&rsaquo;</a>
         </div>
       </div>
     {% endif %}
