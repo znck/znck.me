@@ -364,3 +364,11 @@ blockquote *{
 .post .share{
     zoom: 0.7;
 }
+
+.repo{
+    width: 256px;
+    height: 256px;
+    margin: 8px;
+    border: 1px solid #999;
+    display: inline-block;
+}
