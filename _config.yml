@@ -11,7 +11,7 @@ encodeing:		nil
 
 #comment before pushing
 #url:			http://localhost:4000
-				#uncomment before pushing
+#uncomment before pushing
 baseurl:		/eeg-database-for-android
 
 title:			Rahul Kadyan | GSoC 2014
