@@ -49,7 +49,7 @@ defaults:
          author: "Rahul Kadyan"
 
 links:
-    -  title:	gsoc
+    -  title:	repositories
        url: /
     -  title:	blog
        url: http://blog.rahulkadyan.com
