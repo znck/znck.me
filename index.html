@@ -2,8 +2,9 @@
 layout: page
 tags: [gsoc, google summer of code]
 ---
-{% for repo in site.github.public_repositories %} 
 <div class="line"></div>
 <div class="space"></div>
-
+{% for repo in site.github.public_repositories %} 
+<p>{{ repo }}</p>
 {% endfor %}
+<div class="space"></div>
