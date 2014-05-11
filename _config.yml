@@ -14,8 +14,8 @@ encodeing:		nil
 #uncomment before pushing
 baseurl:		/
 
-title:			Rahul Kadyan | GSoC 2014
-description:	Project journal for eeg-database-for-android
+title:			Rahul Kadyan
+description:	Github project list
 
 owner:
   name:           Rahul Kadyan
@@ -45,7 +45,7 @@ defaults:
       scope:
          path: ""
       values:
-         layout: "GSoC 14 - EEG Database"
+         layout: ""
          author: "Rahul Kadyan"
 
 links:
