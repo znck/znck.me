@@ -1,19 +1,20 @@
 <meta charset="utf-8">
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css">
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css">
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css">
-
-{% if site.owner.twitter %}<!-- Twitter Cards -->
-{% if page.image.feature %}<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site.baseurl }}/images/{{ page.image.feature }}">
-{% else %}<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.baseurl }}/images/{{ page.image.thumb }}{% else %}{{ site.baseurl }}/images/{{ site.logo }}{% endif %}">{% endif %}
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
+{% if site.owner.twitter %}
+<!-- Twitter Cards -->
+	{% if page.image.feature %}
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content="{{ site.baseurl }}/images/{{ page.image.feature }}">
+	{% else %}
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.baseurl }}/images/{{ page.image.thumb }}{% else %}{{ site.baseurl }}/images/{{ site.logo }}{% endif %}">
+	{% endif %}
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="twitter:creator" content="@{{ site.owner.twitter }}">
+{% endif %}
+<!--/ Twitter Cards -->
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
@@ -22,6 +23,7 @@
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
+<!--/ Open Graph -->
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -41,3 +43,10 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/images/apple-touch-icon-144x144-precomposed.png">
+
+<!-- Stylesheets -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css">
+<!--/ Stylesheets -->
