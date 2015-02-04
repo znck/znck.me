@@ -24,7 +24,7 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        rahulkadyan7
   facebook:       rahulkadyan
-  github:         rahulkadyan
+  github:         znck
   # For Google Authorship https://plus.google.com/authorship
   google_plus:  
 
@@ -52,8 +52,5 @@ links:
     -  title:	repositories
        url: /
     -  title:	blog
-       url: http://blog.rahulkadyan.com
-       external: true
-    -  title:	portfolio
-       url: http://rahulkadyan.com
+       url: /blog
        external: true

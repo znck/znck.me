@@ -2,17 +2,3 @@
 layout: page
 tags: [gsoc, google summer of code]
 ---
-<div class="line"></div>
-  {% for repo in site.github.public_repositories %} 
-      <div class="space"></div>
-      <div style="text-align:left; width: 800px; margin: 0 auto">
-        <div class="repo">
-          <h2 class="name"><a href="{{ repo.html_url }}">{{ repo.name }}</a></h2>
-          <div class="space"></div>
-          <div class="desc">{{ repo.description }}</div>
-          <div class="space"></div>
-          <a class="no-style" style="float:right" href="{{ site.baseurl }}/{{ repo.name }}">website &rsaquo;&rsaquo;</a>
-        </div>
-      </div>
-  {% endfor %}
-<div class="space"></div>
