@@ -1,15 +1,13 @@
 <!-- navigation-wrapper -->
-<div class="navigation-wrapper ">
-	<nav role="navigation" id="site-nav" class="center-text nav">
-	        {% for link in site.links %}
-			<h3 class="extra-space-32 inline">
-				{% if link.external %}
-					<a href="{{ link.url }}">{{ link.title }}</a>
-				{% else %}
-					<a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-				{% endif %} 
-			</h3>
-	        {% endfor %}
-	</nav>
+<div id="nav-bar" class="center pull-in pad-cl pad-cr _bt _bb">
+    <div id="nav" class="menu-bar" data-menu-title="Rahul Kadyan">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/working">Working on</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </div>
 </div>
-<!--/ navigation-wrapper -->
