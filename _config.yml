@@ -12,23 +12,22 @@ encodeing:		nil
 #comment before pushing
 #url:			http://localhost:4000
 #uncomment before pushing
-baseurl:		
+baseurl:		http://znck.me
 
 title:			Rahul Kadyan
-description:	Github project list
+description:	Undergrad, IIT Guwahati
 
 owner:
   name:           Rahul Kadyan
   avatar:         bio-photo.png
-  email:          mail@rahulkadyan.com
+  email:          hi@znck.me
   # Social networking links used in footer. Update and remove as you like.
   twitter:        rahulkadyan7
   facebook:       rahulkadyan
   github:         znck
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:  
+  google_plus:    +rahulkadyan
 
-disqus_shortname: gsoc2014
 future:			true
 show_drafts:	nil
 limit_posts:	0
