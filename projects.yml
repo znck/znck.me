@@ -1,0 +1,16 @@
+-
+  title: Plug
+  link: /plug
+  repository: plug
+  description: A collection of pluggable traits for Eloquent (Laravel) models to fix and patch missing features.
+  tags:
+    - laravel
+    - php
+-
+  title: Repositroy
+  link: /repository
+  repository: repository
+  description: Don't use your Eloquent models directly into your controllers, instead create a _repository_.
+  tags:
+      - laravel
+      - php
