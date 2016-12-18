@@ -1,6 +1,6 @@
 ---
 title: Sereno
-photo: https://raw.githubusercontent.com/serenohq/sereno/master/sereno.png
+photo: /assets/images/sereno.png
 repo: https://github.com/serenohq/sereno
 docs: http://sereno.in
 tags:

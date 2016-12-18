@@ -5,10 +5,11 @@ github:
   branch: master
 
 blog:
-  enable_comments: true,
-  disqus_id:
+  enable_comments: true
+  disqus_id: rahulkadyan
 
 sereno:
-  url: http://znck.me
+  url: http://znck.me/
   extensions:
+    - Sereno\Extensions\BlogExtension
     - Sereno\Extensions\ProjectExtension
