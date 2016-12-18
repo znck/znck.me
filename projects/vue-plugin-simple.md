@@ -7,4 +7,4 @@ tags:
   - vue
 ---
 
-Template to create vue plugin or shareable components. The purpose of this Vue project templates is to provide a simple setups so that users can get started with actual plugin code as fast as possible.
+Template to create vue plugin or shareable components. The purpose of this Vue project template is to provide a simple setup so that users can get started with actual plugin code as fast as possible.
