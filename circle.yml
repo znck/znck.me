@@ -6,7 +6,7 @@ dependencies:
   pre:
     - curl -o- -s -L https://yarnpkg.com/install.sh | bash
   override:
-    - composer install --dev --no-interaction
+    - composer global require serenohq/installer --dev --no-interaction
     - yarn --no-progress
   cache_directories:
     - "~/.yarn-cache"
@@ -14,10 +14,10 @@ dependencies:
 
 test:
   override:
-    - yarn run gulp
+    - 'yarn run sereno:build'
 
 deployment:
   publish:
     branch: dev
     commands:
-      - php sereno deploy
+      - 'yarn run sereno:deploy'

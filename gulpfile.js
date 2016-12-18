@@ -5,11 +5,11 @@ var argv = require('yargs').argv;
 elixir.config.publicPath = 'content/assets';
 
 elixir(function (mix) {
-  var env = argv.e || argv.env || 'dev';
+  var env = argv.e || argv.env || 'default';
 
   mix.sass(['app.scss'])
       .browserify('app.js')
-      .exec('php sereno build --env=' + env, [
+      .exec('sereno build --env=' + env, [
         './blog/*',
         './docs/*',
         './content/*',
@@ -18,7 +18,9 @@ elixir(function (mix) {
         './content/**/*',
         './resources/*',
         './resources/**/*',
-        './config*.php'
+        './projects/*',
+        './projects/**/*',
+        './sereno*.yml'
       ])
       .browserSync({
         server: {

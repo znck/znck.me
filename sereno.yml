@@ -1,0 +1,14 @@
+siteName: Rahul Kadyan
+siteDescription: A Hobbyist, An Entrepreneur, A Dreamer, Prefers Spaces over Tabs and (may be little bit) A Writer!
+
+github:
+  branch: master
+
+blog:
+  enable_comments: true,
+  disqus_id:
+
+sereno:
+  url: http://znck.me
+  extensions:
+    - Sereno\Extensions\ProjectExtension
