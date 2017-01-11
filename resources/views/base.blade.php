@@ -6,6 +6,7 @@
     <meta name="description" content="@yield('pageDescription', $siteDescription)">
 
     <title>@yield('pageTitle') {{$siteName}}</title>
+    <link rel="author" href="/humans.txt" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
