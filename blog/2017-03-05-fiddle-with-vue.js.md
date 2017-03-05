@@ -20,7 +20,7 @@ Issues labelled need reproduction or need repro are ignored by maintainers. Main
 > But it’s not sustainable.
 > So I’m instituting a new rule: if you report an issue, you must have a minimal reproduction that demonstrates the problem. You might think you’ve already provided a repro — in fact you might have spent a lot of time figuring out where you think the problem lies, and writing instructions for maintainers to follow, and we’re grateful for that. But if you got sent here, it’s because it’s not enough.
 
-This is an extract from [Rich Harris](https://github.com/Rich-Harris)’ gist on “Please include a repro”.
+This is an extract from [Rich Harris](https://github.com/Rich-Harris)’ gist on “[Please include a repro](https://gist.github.com/Rich-Harris/88c5fc2ac6dc941b22e7996af05d70ff)”.
 
 ## How to create a repro?
 To maintainers, it seems trivial to create a repro but most people struggle isolating the issue and recreating it on jsfiddle (or others), some don’t want to share details of their project and some are just lazy.
@@ -30,7 +30,7 @@ You can use jsfiddle/jsbin to reproduce your issue. If you need a build tool the
 - **Start with a template:** You should use a template, it saves time and better than an empty screen to get started. Use template (https://jsfiddle.net/39epgLj0/) from Vue’s contribution guidelines.
 - **Write minimal code:** If your fiddle has few lines it more likely to solved faster, as it is easier to comprehend small code and issues is already isolated all we have to do is find the cause. You can start pasting the code from your project and strip off all unnecessary stuff and then replace the data with fakes.
 - **Explicitly define dependencies:** Jsfiddle allows you to add external dependencies but rather you should add a script tag with https://unpkg.com/ link.
-- **Follow coding style:** If every one follows same code style then cognitive friction of reading others' code is reduced. [Mikhail Kuznetcov](https://github.com/shershen08) has prepared an extensive code style guide, you should follow that.
+- **Follow coding style:** If every one follows same code style then cognitive friction of reading others' code is reduced. [Mikhail Kuznetcov](https://github.com/shershen08) has prepared an [extensive code style guide](https://pablohpsilva.github.io/vuejs-component-style-guide/), you should follow that.
 
 > I am also trying to formulate interoperability standards that would cover code style and component API. The project have just started. You can keep an eye on progress (star & watch https://github.com/znck/vue-interop).
 
