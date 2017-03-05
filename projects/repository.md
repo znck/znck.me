@@ -1,6 +1,6 @@
 ---
 title: Repository
-photo: https://raw.githubusercontent.com/znck/repository/master/cover.png
+photo: https://raw.githubusercontent.com/znck/repository/master/.github/sereno/content/assets/images/logo.png
 repo: https://github.com/znck/repository
 docs: http://znck.me/repository
 tags:

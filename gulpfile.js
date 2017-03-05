@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 var argv = require('yargs').argv;
 
+process.env.DISABLE_NOTIFIER = true
 elixir.config.publicPath = 'content/assets';
 
 elixir(function (mix) {

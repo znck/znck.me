@@ -4,6 +4,7 @@ post:
   title: First Day in Vue.js
   date: March 3, 2017
   brief: A memory log of first day in Vue.js by Rahul Kadyan (@znck).
+  medium: https://medium.com/@znck/first-day-in-vue-js-399c0ae19e41
   pinned: true
 ---
 
@@ -12,7 +13,9 @@ Back in college, junior year, we were exploring our entrepreneurial skills. I st
 In the short run of our venture we served variety of clients. And there was one providing on demand makeup & haircut services. The product was ready in 40–50 days but one page was not ready for production.
 
 ## The Page
-![](https://cdn-images-1.medium.com/max/1000/1*ffIaYNHeMMODesGt1NO-tw.png)
+
+![](https://cdn-images-1.medium.com/max/1000/1*ffIaYNHeMMODesGt1NO-tw.png){.image-wide}
+
 It had services offered by the client divided into categories and subcategories. User could add multiple instances of same service. So, I hacked up some logic with jQuery and selectors. All cool! ready for production.
 
 But next they added a summery view of selected services. And guess what! modifying services in the summery view should update in original listing. Somehow we did it but it created a mess of events, callbacks and selectors that could fry up brains of best developers. Something was needed to be done at least for sake of next developer who would fight in with my dirty code.
@@ -29,6 +32,3 @@ Thanks a lot! Angular.
 ## And beyond…
 Vue has came a long way since then I’m glad I’m part of it’s journey as a core team member.
 
-------------------------
-{.skip}
-[Read this article on Medium](https://medium.com/@znck/first-day-in-vue-js-399c0ae19e41)

@@ -4,6 +4,7 @@ post:
   title: Fiddle with Vue.js
   date: March 5, 2017
   brief: A not so comprehensive guide on creating issue reproduction for Vue.js
+  medium: https://medium.com/@znck/fiddle-with-vue-js-dfd3e2924992
   pinned: true
 ---
 
@@ -58,6 +59,3 @@ I get an error on each rebuild. On the first run it builds successfully because 
 ### To create an issue
 Always follow contribution guidelines. I know it’s really difficult to read a large article when you’re stuck with an issue. That is why Vue.js team is experimenting with a tool to help users to create issues. It is not in production yet but you can use the prototype (http://vue-issue.surge.sh/).
 
-------------------------
-{.skip}
-[Read this article on Medium](https://medium.com/@znck/fiddle-with-vue-js-dfd3e2924992)

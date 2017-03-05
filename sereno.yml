@@ -11,5 +11,5 @@ blog:
 sereno:
   url: http://znck.me/
   extensions:
-    - Sereno\Extensions\BlogExtension
-    - Sereno\Extensions\ProjectExtension
+    - BlogExtension
+    - ProjectsExtension

@@ -1,7 +1,7 @@
 ---
 title: Rollup Plugin for Vue
-photo: http://znck.me/rollup-plugin-vue/assets/images/cover.png
-repo: https://github.com/znck/rollup-plugin-vue
+photo: https://raw.githubusercontent.com/vuejs/rollup-plugin-vue/master/.github/sereno/content/assets/images/logo.png
+repo: https://github.com/vuejs/rollup-plugin-vue
 docs: http://znck.me/rollup-plugin-vue
 tags:
   - rollup
