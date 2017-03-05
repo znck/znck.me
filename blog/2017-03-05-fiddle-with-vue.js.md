@@ -27,12 +27,12 @@ To maintainers, it seems trivial to create a repro but most people struggle isol
 You can use jsfiddle/jsbin to reproduce your issue. If you need a build tool then scaffold a repository using `vue build` tool. Following is a step by step process I follow when creating an issue:
 
 ### To create a repro on jsfiddle
-- **Start with a template:** You should use a template, it saves time and better than an empty screen to get started. Use template (https://jsfiddle.net/39epgLj0/) from Vue’s contribution guidelines.
+- **Start with a template:** You should use a template, it saves time and better than an empty screen to get started. Use template ([https://jsfiddle.net/39epgLj0/](https://jsfiddle.net/39epgLj0/)) from Vue’s contribution guidelines.
 - **Write minimal code:** If your fiddle has few lines it more likely to solved faster, as it is easier to comprehend small code and issues is already isolated all we have to do is find the cause. You can start pasting the code from your project and strip off all unnecessary stuff and then replace the data with fakes.
-- **Explicitly define dependencies:** Jsfiddle allows you to add external dependencies but rather you should add a script tag with https://unpkg.com/ link.
+- **Explicitly define dependencies:** Jsfiddle allows you to add external dependencies but rather you should add a script tag with [https://unpkg.com/](https://unpkg.com/) link.
 - **Follow coding style:** If every one follows same code style then cognitive friction of reading others' code is reduced. [Mikhail Kuznetcov](https://github.com/shershen08) has prepared an [extensive code style guide](https://pablohpsilva.github.io/vuejs-component-style-guide/), you should follow that.
 
-> I am also trying to formulate interoperability standards that would cover code style and component API. The project have just started. You can keep an eye on progress (star & watch https://github.com/znck/vue-interop).
+> I am also trying to formulate interoperability standards that would cover code style and component API. The project have just started. You can keep an eye on progress (star & watch [https://github.com/znck/vue-interop](https://github.com/znck/vue-interop)).
 
 - **Add comments:** Describe your intent in code. Comments guide readers to understand your code better and be on same page as you’re.
 I’ve created an example fiddle demonstration.
@@ -40,7 +40,7 @@ I’ve created an example fiddle demonstration.
 <script async src="//jsfiddle.net/znck/hm2sfh4r/embed/"></script>
 
 ### To create a repro repository
-- **Use Vue build tool:** You can create zero configuration development setup using vue build. Go through documentation (https://github.com/vuejs/vue-cli/blob/master/docs/build.md) to know more.
+- **Use Vue build tool:** You can create zero configuration development setup using vue build. Go through documentation ([https://github.com/vuejs/vue-cli/blob/master/docs/build.md](https://github.com/vuejs/vue-cli/blob/master/docs/build.md)) to know more.
 - **Include README.md:** Describe your issue briefly and provide steps to produce the issue. Following is an example README.md
 ```markdown
 # Issue: rollup build fails when shared cache
@@ -57,5 +57,5 @@ I get an error on each rebuild. On the first run it builds successfully because 
 - **Push to Github:** Create a github repository and push the repro code.
 
 ### To create an issue
-Always follow contribution guidelines. I know it’s really difficult to read a large article when you’re stuck with an issue. That is why Vue.js team is experimenting with a tool to help users to create issues. It is not in production yet but you can use the prototype (http://vue-issue.surge.sh/).
+Always follow contribution guidelines. I know it’s really difficult to read a large article when you’re stuck with an issue. That is why Vue.js team is experimenting with a tool to help users to create issues. It is not in production yet but you can use the prototype ([http://vue-issue.surge.sh/](http://vue-issue.surge.sh/)).
 
