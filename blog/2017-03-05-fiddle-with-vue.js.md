@@ -30,7 +30,7 @@ You can use jsfiddle/jsbin to reproduce your issue. If you need a build tool the
 - **Start with a template:** You should use a template, it saves time and better than an empty screen to get started. Use template ([https://jsfiddle.net/39epgLj0/](https://jsfiddle.net/39epgLj0/)) from Vue’s contribution guidelines.
 - **Write minimal code:** If your fiddle has few lines it is more likely to be solved faster, as it is easier to comprehend small code and issue is already isolated all we have to do is find the cause. You can start pasting the code from your project and strip off all unnecessary stuff and then replace the data with fakes.
 - **Explicitly define dependencies:** Jsfiddle allows you to add external dependencies but rather you should add a script tag with [https://unpkg.com/](https://unpkg.com/) link.
-- **Follow coding style:** If every one follows same code style then cognitive friction of reading others' code is reduced. [Mikhail Kuznetcov](https://github.com/shershen08) has prepared an [extensive code style guide](https://pablohpsilva.github.io/vuejs-component-style-guide/), you should follow that.
+- **Follow coding style:** If every one follows same code style then cognitive friction of reading others' code is reduced. [Pablo Henrique](https://github.com/pablohpsilva) has prepared an [extensive code style guide](https://pablohpsilva.github.io/vuejs-component-style-guide/), you should follow that.
 
 > I am also trying to formulate interoperability standards that would cover code style and component API. The project have just started. You can keep an eye on progress (star & watch [https://github.com/znck/vue-interop](https://github.com/znck/vue-interop)).
 
