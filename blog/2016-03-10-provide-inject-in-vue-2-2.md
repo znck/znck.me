@@ -51,7 +51,7 @@ The provide/inject binding are **NOT** reactive. But if observed objects are pro
 
 Injections are available in props and data. So, you could set prop defaults to injected data or you can use injections as initial data.
 
-###Performance
+### Performance
 
 Both provide and inject are one time actions performed at component initialisation. So, there won’t be any apparent performance degradation.
 
@@ -59,7 +59,7 @@ provide action is constant time.
 
 For each injected property, inject would traverse the parent chain until first provider is reached.
 
-###Conclusion
+### Conclusion
 
 With provide/inject, you can provide data to distant descendent and that allows to create amazing functionalities. A whole new type of Vue plugins are about to appear.
 
