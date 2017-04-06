@@ -9,7 +9,7 @@ blog:
   disqus_id: rahulkadyan
 
 sereno:
-  url: http://znck.me/
+  url: https://znck.me/
   extensions:
     - BlogExtension
     - ProjectsExtension
