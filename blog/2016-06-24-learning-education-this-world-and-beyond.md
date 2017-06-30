@@ -1,12 +1,9 @@
 ---
-pageTitle: Learning, Education, This world and Beyond! -
-post:
-  title: Learning, Education, This world and Beyond!
-  date: June 24, 2016
-  brief: Education in India from perspective of a student. Few burning questions - What it is? Is it all? and a plug for an EdTech venture.
-  medium: https://medium.com/@znck/learning-education-this-world-and-beyond-10681ec85811
-  pinned: false
+date: 2016-06-24
+description: Education in India from perspective of a student. Few burning questions - What it is? Is it all? and a plug for an EdTech venture.
+medium: https://medium.com/@znck/learning-education-this-world-and-beyond-10681ec85811
 ---
+# Learning, Education, This world and Beyond!
 
 Over the past 12 months, while trying to solve the problems of the education sector in India, I came to know that Department of School Education & Literacy, MHRD is aimed to provide compulsory education to all children at elementary level. ₹69,074 crore was spent on education in year 2015–2016 and 22% increase is expected this year. Programs like “Sarva Shiksha Abhiyan,” “Rashtriya Madhyamik Shiksha Abhiyan,” “Scheme for Strengthening Teacher Education” and half a dozen more are undertaken, to improve education quality.  
 

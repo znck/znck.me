@@ -1,7 +1,11 @@
-/node_modules
-/vendor
-/_cache
-/public
-/.idea
-composer.lock
-.DS_Store
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
