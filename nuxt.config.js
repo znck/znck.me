@@ -43,19 +43,7 @@ module.exports = {
     mode: 'history'
   },
 
-  modules: [
-    ['@nuxtjs/blog', {
-      base: process.env.NODE_ENV === 'production' ? 'https://znck.me' : 'http://localhost:3000',
-      static: true,
-      comments: true,
-      disqus: {
-        shortname: 'rahulkadyan',
-        url: 'https://znck.me'
-      }
-    }],
-    '@nuxtjs/axios',
-    '@nuxtjs/workbox',
-  ],
+  modules: [],
   /*
    ** Customize the progress-bar color
    */
@@ -64,11 +52,10 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    loaders: [
-      {
-        test: /\.yml$/,
-        loader: 'yml-loader'
-      }
-    ]
+    loaders: {
+      scss: {
+        implementation: require('sass'),
+      },
+    },
   }
 }

@@ -5,16 +5,11 @@
   "author": "Rahul Kadyan <hi@znck.me>",
   "private": true,
   "dependencies": {
-    "@nuxtjs/axios": "^2.0.3",
-    "@nuxtjs/blog": "https://github.com/znck/nuxt-module-blog",
-    "@nuxtjs/content": "^0.1.0",
-    "@nuxtjs/workbox": "^0.4.0",
-    "axios": "^0.16.2",
-    "bootstrap": "next",
-    "gh-pages": "^1.0.0",
-    "nuxt": "^1.0.0-alpha.4",
-    "vue-disqus": "^2.0.3",
-    "yml-loader": "^2.0.1"
+    "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
+    "nuxt": "^2.7.1",
+    "sass": "^1.20.1",
+    "sass-loader": "^7.1.0"
   },
   "scripts": {
     "dev": "nuxt",
@@ -23,9 +18,5 @@
     "generate": "nuxt generate",
     "predeploy": "NODE_ENV=production yarn generate",
     "deploy": "./deploy.sh"
-  },
-  "devDependencies": {
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
   }
 }

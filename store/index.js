@@ -5,8 +5,7 @@ const state = () => ({
   navigator: {
     links: [
       { link: '/', text: 'About', position: 0 },
-      { link: '/blog', text: 'Blog', position: 1 },
-      { link: '/projects', text: 'Projects', position: 10 },
+      { link: 'https://znck.dev/', text: 'Blog', position: 1 },
       { link: 'https://github.com/znck', text: 'Github', position: 100 },
       { link: 'https://twitter.com/@znck0', text: 'Twitter', position: 101 },
     ]

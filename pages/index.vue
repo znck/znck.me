@@ -5,14 +5,11 @@
         <img src="/znck.jpg" width="140" style="border-radius: 100%">
       </div>
 
-      <div class="bg-primary text-white py-3 px-3 mb-2 text-xs-center">
+      <div class="py-3 px-3 mb-2 text-xs-center">
         <div class="w-100">
           <h1>
-            <kbd>Rahul Kadyan</kbd>
+            <a href="https://znck.dev">znck.dev</a> is on!
           </h1>
-          <br>
-
-          <p>A Hobbyist, An Entrepreneur, A Dreamer, Prefers Spaces over Tabs and (may be little bit) A Writer!</p>
         </div>
       </div>
     </div>
