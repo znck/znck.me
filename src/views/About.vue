@@ -11,7 +11,8 @@ export default {
       <!-- Who am I? -> developer, IITian, Vue Core Team -->
       <p class="mb-6">
         I am an <abbr title="Indian Institute of Technology">IIT</abbr> graduate and <em>self-trained</em> software
-        engineer. I am <strong>a member of Vue core team</strong>, focusing on compiler and toolings for Vue ecosystem.
+        engineer. I am <strong>a member of the Vue core team</strong>, focusing on compiler and toolings for the Vue
+        ecosystem.
       </p>
 
       <!-- What do I do? -> Started vue meetup, AwesomeConf, speak about Vue, Contribute to Vue, Learning web accessibility, Consultancy/Training for Vue -->
