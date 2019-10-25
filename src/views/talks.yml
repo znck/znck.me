@@ -1,0 +1,185 @@
+- title: Building your own presentation framework
+  description: >+
+    A short talk on showcasing — how can you build slides for your talk in a developer friendly way.
+  tags:
+    - Vue
+    - VS Code
+    - Webpack
+    - Vue CLI
+    - WebRTC
+  event:
+    name: ConnectTECH
+    website: https://connect.tech/
+    startDate: 2019-10-17
+    endDate: 2019-10-18
+    location: Atlanta, United States
+  slides: https://my-presentation.netlify.com
+  photo: https://pbs.twimg.com/media/EHLZiAMWwAoBMRO?format=jpg
+
+- title: Vue 3.0 Source Walkthrough
+  description: >+
+    Vue 3.0 source workthrough to kick start a hacktoberfest style collaborative contribution event.
+  tags:
+    - Vue 3.0
+    - Meetup
+  event:
+    name: VueBLR
+    website: https://blr.vue.community/
+    startDate: 2019-10-12
+    endDate: 2019-10-12
+    location: Bangalore, India
+  youtube: t8uEAWz7abo
+
+- title: Future of Vue
+  description: >+
+    A peek into what's coming next with focus on backward compatibility,
+    performance enhancements,
+    reactivity caveats and
+    "How to get involved with Vue 3?".
+  tags:
+    - Vue 3.0
+    - 'JSFoo: VueDay'
+  event:
+    name: 'JSFoo: VueDay'
+    website: https://jsfoo.in/2019-vueday/
+    startDate: 2019-08-30
+    endDate: 2019-08-30
+    location: Bangalore, India
+  youtube: Om03OUxIaAI
+  slides: https://speakerdeck.com/znck/future-of-vue-jsfoo-vueday-2019
+
+- title: 'Demystifying: The Dark Art of SFC Compilation'
+  description: >+
+    Vue single file components empowers developers with the ability to write declarative 
+    render functions using plain HTML-like syntax. The so-called SFCs also provide features 
+    like collocation and scoped styles. We tend to use these SFCs effortlessly as any other 
+    JavaScript file but to reach that level of ease, Vue does the heavy lifting of 
+    transpilation. This talk takes a deep dive in the compilation process of Vue components 
+    and explains how to write a custom block processor. It also discovers some less known 
+    facts about SFCs.
+  tags:
+    - Vue
+    - Vue Template Compiler
+    - VueConf
+  event:
+    name: 'VueConf US'
+    website: https://vueconf.us/2019
+    startDate: 2019-03-25
+    endDate: 2019-03-27
+    location: Atlanta, United States
+  youtube: Ceo771OXaCY
+  slides: https://vueconf19-compiler.surge.sh
+
+- title: 'Demystifying: The Dark Art of SFC Compilation'
+  description: >+
+    Vue single file components empowers developers with the ability to write declarative 
+    render functions using plain HTML-like syntax. The so-called SFCs also provide features 
+    like collocation and scoped styles. We tend to use these SFCs effortlessly as any other 
+    JavaScript file but to reach that level of ease, Vue does the heavy lifting of 
+    transpilation. This talk takes a deep dive in the compilation process of Vue components 
+    and explains how to write a custom block processor. It also discovers some less known 
+    facts about SFCs.
+  tags:
+    - Vue
+    - Vue Template Compiler
+    - ConnectTECH
+  event:
+    name: 'ConnectTECH'
+    website: https://connect.tech/2018
+    startDate: 2018-10-15
+    endDate: 2018-10-15
+    location: Atlanta, United States
+  youtube: R46xNMhJqoE
+  slides: https://sfc-compilation-connect-tech.surge.sh
+
+- title: 'A deep dive in SFC compilation'
+  description: >+
+    Vue single file components empowers developers with the ability to write declarative 
+    render functions using plain HTML-like syntax. The so-called SFCs also provide features 
+    like collocation and scoped styles. We tend to use these SFCs effortlessly as any other 
+    JavaScript file but to reach that level of ease, Vue does the heavy lifting of 
+    transpilation. This talk takes a deep dive in the compilation process of Vue components 
+    and explains how to write a custom block processor. It also discovers some less known 
+    facts about SFCs.
+  tags:
+    - Vue
+    - Vue Template Compiler
+    - VueFes
+  event:
+    name: VueFes
+    website: https://vuefes.jp/2018
+    startDate: 2018-11-03
+    endDate: 2018-11-03
+    location: Tokyo, Japan
+  youtube: nFFZBVb5vbA
+  slides: https://znck.surge.sh
+
+- title: The Progressive Framework
+  description: >+
+    A live coded example to showcase progressive nature of Vue.
+  tags:
+    - Vue
+    - Live Coding
+  event:
+    name: The Dev Theory
+    website: https://twitter.com/thedevtheory
+    startDate: 2018-04-14
+    endDate: 2018-04-14
+    location: New Delhi, India
+  photo: https://pbs.twimg.com/media/DauWsGfUwAAOGfC?format=jpg&name=large
+  slides: https://github.com/znck/demo-eh-progressive
+
+- title: 'React to Vue: why and how?'
+  description: >+
+    A head-on comparison of the two trending UI libraries to discuss their 
+    similarities, differences and design decisions undertaken.
+  tags:
+    - Vue
+    - Migrating to Vue
+    - React
+  event:
+    name: 'ReactFoo'
+    website: https://reactfoo.in/2018-hyderabad/
+    startDate: 2018-03-17
+    endDate: 2018-03-17
+    location: Heyderabad, India
+  youtube: dY3sRuSut3g
+  slides: https://speakerdeck.com/znck/react-to-vue-why-and-how
+
+- title: 'Collocation in modern web'
+  description: >+
+    Notes on using collocation in modern web applications.
+  tags:
+    - Vue
+    - Single File Component
+  event:
+    name: 'GDG Mumbai'
+    website: https://www.meetup.com/OpenSourceDevs-Mumbai/events/244232596/
+    startDate: 2017-10-28
+    endDate: 2017-10-28
+    location: Mumbai, India
+  youtube: IZazo2BUm5A
+  slides: https://speakerdeck.com/znck/collocation-in-modern-web
+
+- title: 'Framework Wars: Vue vs Meteor vs Angular'
+  description: >+
+    Three speakers, three frameworks.
+
+    Rahul Kadyan on why you should use Vue.js.
+
+    Sapna Upreti on the features and strengths of Meteor.
+    
+    Vinci Rufus on why Angular is the right choice.
+  tags:
+    - Vue
+    - Framework Comparision
+    - Meteor
+    - Angular
+  event:
+    name: 'JSFoo'
+    website: https://jsfoo.in/2017/
+    startDate: 2017-09-15
+    endDate: 2017-09-16
+    location: Bangalore, India
+  youtube: ynZ3mCe4ZAA
+  slides: https://speakerdeck.com/znck/choosing-vue-dot-js
