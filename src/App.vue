@@ -7,7 +7,7 @@
       <img
         src="https://avatars.io/twitter/znck0"
         alt="Rahul Kadyan"
-        class="rounded-full object-cover w-24 h-24 bg-gray-300 mb-6 overflow-hidden"
+        class="rounded-full object-cover w-24 h-24 bg-gray-300 my-6 overflow-hidden"
       />
       <h1 class="text-5xl font-bold">Rahul Kadyan</h1>
       <h2 class="text-3xl">Vue Core Team Member</h2>
