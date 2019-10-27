@@ -152,7 +152,8 @@ export default {
               </h4>
 
               <p class="text-xs text-gray-900">
-                {{ item.typeName }} — {{ item.summary ? item.summary + ' — ' : '' }} Watched {{ item.humanDate }}.
+                {{ item.typeName }} — {{ item.summary ? item.summary + ' — ' : '' }}
+                {{ item.type === 'P' ? 'Listened' : 'Watched' }} {{ item.humanDate }}.
               </p>
 
               <blockquote class="text-sm text-gray-900" v-html="item.comment" />

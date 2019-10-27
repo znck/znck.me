@@ -1,9 +1,25 @@
+- title: Microsoft Research Podcast
+  link: https://podcasts.apple.com/in/podcast/microsoft-research-podcast/id1318021537?i=1000453721205
+  type: P
+  summary: Ep. 94
+  startDate: 2019-10-27
+  endDate: 2019-10-27
+  comment: News from the front in the post-quantum crypto wars with Dr. Craig Costello.
+
+- title: Yound Sheldon
+  link: https://www.primevideo.com/detail/0PURFQY578DB8NNPQJG4L52E4W
+  type: TV
+  summary: Season 3, Ep. 1-4
+  startDate: 2019-10-25
+  endDate: 2019-10-26
+  comment: I liked Missy's new character arc.
+
 - title: Stuber
   link: https://amzn.to/2WeTIiB
   type: M
   startDate: 2019-10-24
   endDate: 2019-10-24
-  comment: In flight movie ¯\\_(ツ)_/¯
+  comment: In flight movie ¯\\\_(ツ)\_/¯
 
 - title: Late Night
   link: https://amzn.to/2Jl0zC5
@@ -27,12 +43,13 @@
   endDate: 2019-10-21
   comment: Thanks [Tessa](https://twitter.com/halftes6) for introducing me to Proko.
 
-- title: Micro-Frontends with Luca Mezzalira
+- title: Views on Vue
   link: https://podcasts.apple.com/in/podcast/views-on-vue/id1364741105?i=1000451886952
   type: P
-  summary: 'Views on Vue: Ep. 82'
+  summary: Ep. 82
   startDate: 2019-10-16
   endDate: 2019-10-16
+  comment: Micro-Frontends with Luca Mezzalira
 
 - title: One Punch Man
   link: https://www.netflix.com/title/80117291

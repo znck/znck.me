@@ -69,7 +69,7 @@ export default {
           <li
             v-for="tag in talk.tags"
             :key="tag"
-            class="tag inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+            class="tag inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-4"
             v-text="tag"
           />
         </ul>
