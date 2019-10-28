@@ -30,6 +30,31 @@
     location: Bangalore, India
   youtube: t8uEAWz7abo
 
+- title: Building for Developer Experience
+  description: |-
+      At Myntra, we have hundreds of micro applications built over a few years by a continuously changing team. Different people brought different ideas, and these applications became an amalgam of different design processes, themes, libraries, and tools with lack of any governing principles. These differences and no governance led to multiple forks in design and experience. Now, we have a solution which unifies the forks, makes it easier to deliver consistent user experience and much more.
+      
+      In this talk, I share the problems we faced: 
+      - In maintaining a component library.
+      - In supporting hundreds of applications.
+      - In communicating design decisions.
+
+      And how we ended up building tools for fixing broken developer experience, which in turn addressed the issues of user experience inconsistencies.
+
+      In short, this is a story of re-making of a design system until it made sense to everyone.
+
+  tags:
+    - React
+    - Design System
+    - JSFoo
+  event:
+    name: JSFoo 2019
+    website: https://hasgeek.com/jsfoo/2019/
+    startDate: 2019-09-27
+    endDate: 2019-09-28
+    location: Bangalore, India
+  youtube: DPNCRgoQr0o
+
 - title: Future of Vue
   description: >+
     A peek into what's coming next with focus on backward compatibility,

@@ -1,12 +1,17 @@
 <script>
 import Layout from '@/layouts/default.vue'
 import talks from './talks.yml'
+import marked from 'marked'
+
 export default {
   components: { Layout },
   computed: {
     talks() {
       return talks
     },
+  },
+  methods: {
+    marked,
   },
 }
 </script>
@@ -50,19 +55,19 @@ export default {
         <div class="px-6 py-4">
           <h2 class="font-bold text-xl mb-2">{{ talk.title }}</h2>
           <p v-if="talk.event" class="text-sm text-gray-500 -mt-2 mb-4">
-            <AppLink :to="talk.event.website" external
-              ><span class="text-gray-500 focus:text-gray-700 hover:text-gray-700">{{ talk.event.name }}</span></AppLink
-            >
+            <AppLink :to="talk.event.website" external>
+              <span class="text-gray-500 focus:text-gray-700 hover:text-gray-700">{{ talk.event.name }}</span>
+            </AppLink>
             — {{ talk.event.location }} —
             <time :datetime="talk.event.startDate">{{ new Date(talk.event.startDate).toDateString() }}</time>
             <span v-if="talk.slides">
               —
-              <AppLink :to="talk.slides" external
-                ><span class="text-gray-500 focus:text-gray-700 hover:text-gray-700">Slides</span></AppLink
-              ></span
-            >
+              <AppLink :to="talk.slides" external>
+                <span class="text-gray-500 focus:text-gray-700 hover:text-gray-700">Slides</span>
+              </AppLink>
+            </span>
           </p>
-          <p class="text-gray-700 text-base" :id="`talk-${index}-desc`" v-html="talk.description" />
+          <section class="text-gray-700 text-base description" :id="`talk-${index}-desc`" v-html="marked(talk.description)" />
         </div>
 
         <ul class="px-6 pb-4" aria-label="tags">
@@ -78,9 +83,17 @@ export default {
   </Layout>
 </template>
 
-<style scoped>
+<style>
 .tag::before {
   display: inline;
   content: '#';
+}
+
+.description ul {
+  @apply list-disc list-outside pl-4 my-4;
+}
+
+.description p {
+  @apply my-4;
 }
 </style>
