@@ -47,7 +47,7 @@ export default {
             Senior Software Engineer (frontend) and Design System Lead at Myntra Designs, April 2018 - October 2019
           </li>
           <li class="mt-4">Software Engineer (backend) at Myntra Designs, June 2017 - March 2018</li>
-          <li class="mt-4">Software Engineer (wep performance) at Headout, May 2017 - May 2017</li>
+          <li class="mt-4">Software Engineer (web performance) at Headout, May 2017 - May 2017</li>
           <li class="mt-4">Co-founded and development at Scalex, January 2016 - April 2017</li>
           <li class="mt-4">Co-founded and development at Breve Labs, February 2015 - December 2015</li>
           <li class="mt-4">Google Summer of Code fellowship at INCF, May 2014 - August 2014</li>
