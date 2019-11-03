@@ -18,6 +18,7 @@ const MONTHS = [
 ]
 
 const TYPES = {
+  A: 'Article',
   B: 'Book',
   M: 'Movie',
   TV: 'TV Show',
@@ -58,7 +59,7 @@ export default {
         const endDate = new Date(item.endDate)
 
         const key = startDate.getUTCFullYear()
-        const subKey = MONTHS[startDate.getUTCMonth()]
+        const subKey = MONTHS[startDate.getUTCMonth() - 1]
 
         if (!(startDate.getUTCFullYear() in data)) {
           data[key] = {}
@@ -71,6 +72,8 @@ export default {
         const humanDate =
           startDate.getTime() === endDate.getTime()
             ? 'on ' + startDate.toDateString()
+            : !item.endDate
+            ? 'from ' + startDate.toDateString() + ' (in progress)'
             : 'from ' + startDate.toDateString() + ' to ' + endDate.toDateString()
 
         data[key][subKey].push({
@@ -153,10 +156,11 @@ export default {
 
               <p class="text-xs text-gray-900">
                 {{ item.typeName }} — {{ item.summary ? item.summary + ' — ' : '' }}
-                {{ item.type === 'P' ? 'Listened' : 'Watched' }} {{ item.humanDate }}.
+                {{ item.type === 'P' ? 'Listened' : item.type === 'A' || item.type === 'B' ? 'Read' : 'Watched' }}
+                {{ item.humanDate }}.
               </p>
 
-              <blockquote class="text-sm text-gray-900" v-html="item.comment" />
+              <blockquote class="text-sm text-gray-900 markdown" v-html="item.comment" />
             </section>
           </div>
         </section>
@@ -175,3 +179,13 @@ export default {
     </aside>
   </Layout>
 </template>
+
+<style>
+.markdown ul {
+  list-style: circle;
+  padding-left: 1rem;
+}
+.markdown ol {
+  list-style: decimal;
+}
+</style>

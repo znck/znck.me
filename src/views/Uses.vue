@@ -222,6 +222,11 @@ export default {
 
       <ul class="list-disc list-outside pl-4">
         <li>
+          <AppLink to="https://protonmail.com" external>ProtonMail</AppLink>
+          hosts my mailbox. It's a privacy focused email service which provides end-to-end encrypted emails.
+        </li>
+
+        <li>
           <AppLink to="https://www.notion.so/" external>Notion.so</AppLink>
           is my note taking app of choice and will probably continue to be so for a long time.
         </li>

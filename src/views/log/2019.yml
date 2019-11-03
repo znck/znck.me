@@ -1,3 +1,49 @@
+- title: Designing accessible color systems
+  link: https://stripe.com/gb/blog/accessible-color-systems
+  type: A
+  startDate: 2019-11-02
+  endDate: 2019-11-02
+  comment: Interesting approch for picking perceptually uniform color palettes.
+
+- title: Atypical
+  link: https://www.netflix.com/title/80117540
+  type: TV
+  summary: Season 3, Ep. 1 - 5
+  startDate: 2019-11-02
+  endDate: 2019-11-02
+  comment: Sam goes to college, a whole new environment with lots of adventures.
+
+- title: 'Bird by Bird: Some Instructions on Writing and Life'
+  link: https://amzn.to/36upux6
+  type: B
+  summary: by Anne Lamott
+  startDate: 2019-11-01
+  comment: |
+    My takeaways from the book:
+
+    * _Do it everyday. Do it as a debt of honour. And make a commitment to finishing things._
+    * _I'm lost too. But I know._
+    * _Hope begins in dark. You show up and try to do the right thing and dawn will come._
+    * _**You tell your version and I am going to tell mine.**_
+    * _Writing is like driving at night, you can see as far as headlights but you can make the trip. You don't have to see the destination, or everything that pass along. You have to see two or three metres ahead of you._
+    * _Perfectionism is the voice of the oppressor._
+
+- title: Watchmen
+  link: https://www.hbo.com/watchmen
+  type: TV
+  summary: Season 1, Ep. 1 - 2
+  startDate: 2019-11-01
+  endDate: 2019-11-01
+  comment: It mixes the original graphic novel with growing racial intolerance in the world.
+
+- title: Silicon Valley
+  link: https://www.hbo.com/silicon-valley/season-6
+  type: TV
+  summary: Season 6, Ep. 1
+  startDate: 2019-11-01
+  endDate: 2019-11-01
+  comment: Six seasons in but still funny and fresh.
+
 - title: Microsoft Research Podcast
   link: https://podcasts.apple.com/in/podcast/microsoft-research-podcast/id1318021537?i=1000453721205
   type: P
