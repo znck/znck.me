@@ -1,0 +1,79 @@
+==================================================================
+https://keybase.io/znck
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://znck.me
+  * I am znck (https://keybase.io/znck) on keybase.
+  * I have a public key with fingerprint 4960 41D2 4381 8206 D62C  C2DF 21AF 5D4A 08BA 995B
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101438ad2339d11fded2304035b176897ea2821c66392c8093046aa635f9f173a710a",
+      "fingerprint": "496041d243818206d62cc2df21af5d4a08ba995b",
+      "host": "keybase.io",
+      "key_id": "21af5d4a08ba995b",
+      "kid": "0101438ad2339d11fded2304035b176897ea2821c66392c8093046aa635f9f173a710a",
+      "uid": "1733149fdcb22d259a38390dac775219",
+      "username": "znck"
+    },
+    "merkle_root": {
+      "ctime": 1572930948,
+      "hash_meta": "38bddbed7e4d27f3eeaa2c70d16ab1320388f22b2ec0aa1ea238e369e9178e55",
+      "seqno": 8735507
+    },
+    "revoke": {
+      "sig_ids": [
+        "60d3ee281236cc3dba9c795bb83e0953bb36e793fb45616fc5a37e59c5a9a9350f"
+      ]
+    },
+    "service": {
+      "hostname": "znck.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1572930951,
+  "expire_in": 157680000,
+  "prev": "938aa09d5fae14e2342496c03ea97bb1053afde07f93a213592085d12033d751",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtU19oHEUcvthEYtqCVdLDSgNZMIoe7fzZmdm5aDGpII02YNWKpud1Zmf2slyy
+e9ndnE2OoFWrsUUJpYg1KC2WPhRsENSHkocaG20VfKgaE7UWoU0TQfClfYh/cPaw
+KOKj8zIzv/l93++bb34zsXZVprmhfarQ03zqcF/D58syU/io6VDNkqEasfI1q6zr
+kx5QOk6KZV9ZeQtAAG3sCIUw5gpCT2mzBDbAREJGHc60QA6CLqWYI9cB3BxSISgm
+Hvcgw4JBIKyc5flBSUeVyA8SQ2tzCmyokKGGDgJUUeS6SHkICo8oWwBHCs6JNMD+
+ME4RRpwUsd7khyZmNsW6vP/I/591D9fpTABDm3vKlQgpRLjADuZACZcxgiBPE2Md
+BWJQm+zRwC1bYzlrUEflAV2MwjBJjXUTPz2GhCFTjduOuZyI+4uDOhEGhR2plNSK
+aVsh5mGthUAuAwpSISFGADuOh5BE2gVCQKMfOxpTrjlkjibEaIj1UBBaeYdhQgAz
+CiJdDcs6LR77JWNZbOX7LAqUIUfO6QAiTF0XK2Oey4x90sEacIKlxFQzjj1pEwqp
+5xKBmSbczFxwTIBnFcbSclHVd+v06Sv94/abzCpnVaIwCd1wwAT7k6QS51NTkpFK
+mvWMlsW/8EXpB8q0h0FUdRT7YWBMMpn/8ovAnKX3VPxIF/2gHqYOMCOto6uGkpv3
+FoAr4gkNbY2wjUyfuQBrwZmUEBAsTB8A5nEsEMSEI+AQBY2zWDEC/zYQG9JElAyn
+sS0QyXCkrbGWVxpwY6ahObNxfXvjtt1d57fuff7GudzMxetfqumG9D9lWm66+Xpk
+q2zOvPxA6YPHat993zfZmu8/8G3m7a/Onsx2PvTl/Jaro31ztwVd6y5N/zE61Y5a
+T3cOVBdmsqVjo+vWNN6yc/LC3uX58JtfX8oNHS/cuV9/2Nkx3n2ytv39h5e2bH/2
+55WdhRcPbr42ef/Sp8/9sOHVdyZ+b21b4Gd3n7k25a7Qe47uWjp4uaMlt3q2546Z
+PfQLvmMHeGP2Sm/h3id+G5o519GWbStOJGc+7l04Mntu2+LIu6tXvXY8+3jt0JPv
+rTz4Y9f5p/dlli791NqEdh05cWz80ZbM9MW5K49sWFO7ff6ovXji67suD89Zn2zc
+d2G6+771d2dv/Wxkbff+15/afAr3vFX75c1lfrX3AH1hfPHwnw==
+=b9js
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/znck
+
+==================================================================
