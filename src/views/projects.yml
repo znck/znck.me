@@ -1,0 +1,53 @@
+- title: Grammarly
+  description: >+
+    An unofficial Grammarly integration for VS Code. It provides
+    diagnostics for grammar and spelling along with quick fix code
+    actions.
+  tags:
+    - VS Code Extension
+    - TypeScript
+    - Experimental
+  repository: https://github.com/znck/grammarly
+  website: https://marketplace.visualstudio.com/items?itemName=znck.grammarly
+
+- title: Virtualized
+  description: >+
+    An abstract renderer for virtualisation of large lists and collections.
+  tags:
+    - Vue
+    - Library
+    - TypeScript
+    - Experimental
+  repository: https://github.com/znck/virtualized
+  website: https://virtualized.surge.sh/
+
+- title: Lazy Hydration
+  description: >+
+    A utility library to prioritize selective hydration of sever rendered Vue application.
+  tags:
+    - Vue
+    - Library
+    - TypeScript
+    - Experimental
+  repository: https://github.com/znck/lazy-hydration
+  website: https://lazy-hydration.herokuapp.com/
+
+- title: Lazy Image
+  description: >+
+    Declarative deferred/lazy image loading utility for Vue applications.
+  tags:
+    - Vue
+    - Library
+    - JavaScript
+    - Experimental
+  repository: https://github.com/znck/lazy-image-component
+
+- title: PropTypes
+  description: >+
+    Fluent prop validation utility for Vue that won't land in your production code.
+  tags:
+    - Vue
+    - Library
+    - TypeScript
+    - Experimental
+  repository: https://github.com/znck/prop-types
