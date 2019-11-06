@@ -54,19 +54,36 @@ export default {
     mediaByYearsAndMonths() {
       const data = {}
 
+      Object.defineProperty(data, 'inProgress', {
+        configurable: false,
+        enumerable: false,
+        value: [],
+        writable: false,
+      })
+
       this.filteredMedia.forEach(item => {
         const startDate = new Date(item.startDate)
         const endDate = new Date(item.endDate)
 
         const key = startDate.getUTCFullYear()
         const subKey = MONTHS[startDate.getUTCMonth() - 1]
+        const otherKey = startDate.getUTCFullYear()
+        const otherSubKey = MONTHS[startDate.getUTCMonth() - 1]
 
-        if (!(startDate.getUTCFullYear() in data)) {
+        if (!(key in data)) {
           data[key] = {}
+        }
+
+        if (!(otherKey in data)) {
+          data[otherKey] = {}
         }
 
         if (!(subKey in data[key])) {
           data[key][subKey] = []
+        }
+
+        if (!(otherSubKey in data[key])) {
+          data[otherKey][otherSubKey] = []
         }
 
         const humanDate =
@@ -76,7 +93,7 @@ export default {
             ? 'from ' + startDate.toDateString() + ' (in progress)'
             : 'from ' + startDate.toDateString() + ' to ' + endDate.toDateString()
 
-        data[key][subKey].push({
+        const processedItem = {
           ...item,
           startDate,
           endDate,
@@ -84,7 +101,16 @@ export default {
           year: key,
           month: subKey,
           typeName: TYPES[item.type],
-        })
+        }
+
+        if (!item.endDate) {
+          data.inProgress.push(processedItem)
+        } else {
+          data[key][subKey].push(processedItem)
+          if (key !== otherKey || subKey !== otherSubKey) {
+            data[otherKey][otherSubKey].push(processedItem)
+          }
+        }
 
         if (!TYPES[item.type]) {
           console.warn('Unknown type: ' + item.type)
@@ -106,9 +132,9 @@ export default {
     <form aria-label="Filter media log" class="w-full mt-6" @submit.prevent>
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6">
-          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="media-filter-type">
-            Media Type
-          </label>
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="media-filter-type"
+            >Media Type</label
+          >
           <div class="relative">
             <select
               id="media-filter-type"
@@ -139,8 +165,34 @@ export default {
         Showing only {{ typeName }} logs.
         <span v-if="filteredMedia.length"
           >{{ filteredMedia.length }} {{ filteredMedia.length === 1 ? 'record' : 'records' }} are found.</span
-        ><span v-else>No records are found.</span>
+        >
+        <span v-else>No records are found.</span>
       </div>
+
+      <article v-if="mediaByYearsAndMonths.inProgress.length" key="in-progress" :aria-label="`In progress`">
+        <h2 class="text-4xl text-bold mt-8">In progress</h2>
+
+        <div class="list-disc list-outside pl-4 mt-2">
+          <section
+            v-for="item in mediaByYearsAndMonths.inProgress"
+            :key="item.id"
+            class="mt-4"
+            style="display: list-item"
+          >
+            <h4 class="text-bold">
+              <AppLink :to="item.link" external>{{ item.title }}</AppLink>
+            </h4>
+
+            <p class="text-xs text-gray-900">
+              {{ item.typeName }} — {{ item.summary ? item.summary + ' — ' : '' }}
+              {{ item.type === 'P' ? 'Listened' : item.type === 'A' || item.type === 'B' ? 'Read' : 'Watched' }}
+              {{ item.humanDate }}.
+            </p>
+
+            <blockquote class="text-sm text-gray-900 markdown" v-html="item.comment" />
+          </section>
+        </div>
+      </article>
 
       <article v-for="(months, year) in mediaByYearsAndMonths" :key="year" :aria-label="`My media log from ${year}`">
         <h2 :aria-label="`My media log from ${year}`" class="text-4xl text-bold mt-8">{{ year }}</h2>
