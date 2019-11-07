@@ -26,11 +26,19 @@ export default {
 
     <template v-for="(talk, index) in talks">
       <article
-        class="rounded overflow-hidden shadow-lg mt-6 border border-solid border-gray-200"
+        class="rounded overflow-hidden shadow-lg mt-6 border border-solid border-gray-200 relative"
         :key="index"
         :aria-label="'Talk: ' + talk.title"
         :aria-describedby="`talk-${index}-desc`"
       >
+        <div
+          class="absolute top-0 left-0 px-2 py-1 bg-green-500 rounded-tl rounded-br uppercase text-xs z-10"
+          v-if="new Date(talk.event.startDate).getTime() > Date.now()"
+        >
+          <AppLink :to="talk.event.website" external>
+            <span class="text-white hover:underline">Get Tickets</span>
+          </AppLink>
+        </div>
         <div v-if="talk.youtube" class="relative w-full bg-gray-300" style="padding-bottom: 56%">
           <iframe
             class="absolute top-0 left-0 right-0 bottom-0"
@@ -67,7 +75,11 @@ export default {
               </AppLink>
             </span>
           </p>
-          <section class="text-gray-700 text-base description" :id="`talk-${index}-desc`" v-html="marked(talk.description)" />
+          <section
+            class="text-gray-700 text-base description"
+            :id="`talk-${index}-desc`"
+            v-html="marked(talk.description)"
+          />
         </div>
 
         <ul class="px-6 pb-4" aria-label="tags">

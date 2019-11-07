@@ -1,3 +1,31 @@
+- title: New Vue. New Compiler. Let's unpack!
+  description: >+
+    It's a compiler talk. Wait! Let me tell you something before you walk away, the compilation of Vue template may appear some dark-art, but when you look under the hood, it is a series of simple coordinated steps. In this talk, we would dive deep into the simple steps and how they coordinate to build the compilation process.
+
+    **Overview:**
+    
+    - Steps in Vue compilation
+    - The Vue compiler
+      - The template compiler
+        - The parser and what goes into writing a parser?
+        - The optimizer and what can be optimized?
+        - The code generator
+      - Augmenting the template compiler
+    - Augmenting the Vue compiler
+    - Use cases for compiler augmentation
+
+  tags:
+    - Vue
+    - Compiler
+    - Parser
+  event:
+    name: Vue.js Amsterdam
+    website: https://vuejs.amsterdam
+    startDate: 2020-02-20
+    endDate: 2020-02-21
+    location: Amsterdam, Netherlands
+  photo: /assets/vue-amsterdam.jpg
+
 - title: Building your own presentation framework
   description: >+
     A short talk on showcasing — how can you build slides for your talk in a developer friendly way.
