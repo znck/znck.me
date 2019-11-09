@@ -55,7 +55,7 @@ export default {
 
         <p class="mt-6">
           Checkout <AppLink to="https://www.linkedin.com/in/rahulkadyan" external>my LinkedIn profile</AppLink> for
-          detailed work history.
+          detailed work history and <AppLink to="/press">the press page</AppLink> for bio and photos.
         </p>
       </section>
     </article>
