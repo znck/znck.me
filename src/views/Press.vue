@@ -23,8 +23,8 @@ export default {
 
     <h2 class="text-2xl mt-6 mb-4 font-bold text-gray-800">Photos</h2>
 
-    <section class="flex text-center">
-      <figure class="mr-6">
+    <section class="flex text-center flex-col md:flex-row items-center">
+      <figure class=" md:mr-6">
         <img class="w-64 h-64 rounded-full my-4" src="@/assets/press/photo.jpg" alt="Rahul Kadyan" />
 
         <figcaption>Photo</figcaption>
