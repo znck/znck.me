@@ -42,7 +42,7 @@ export default {
         <p class="mb-4">
           <AppLink to="https://amzn.to/2BEAxWa" external>Apple iPhone XR (64GB) - Black</AppLink> <br />
 
-          It's quite heavier and lager than my last phone (iPhone 7) but now I am kinda conditioned to it but I am on
+          It's quite heavier and larger than my last phone (iPhone 7) but now I am kinda conditioned to it but I am on
           constant lookout for a smaller iPhone.<br />
 
           <br />
