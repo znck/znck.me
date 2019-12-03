@@ -1,3 +1,70 @@
+- title: The ugly truth of fast fashion
+  link: https://www.youtube.com/watch?v=xGF3ObOBbac
+  type: M
+  startDate: 2019-12-01
+  endDate: 2019-12-01
+
+- title: Marley & Me
+  type: M
+  startDate: 2019-11-19
+  endDate: 2019-11-19
+
+- title: Hancock
+  link: https://amzn.to/34JMZ3R
+  type: M
+  startDate: 2019-11-18
+  endDate: 2019-11-18
+
+- title: Bounty Hunter
+  type: M
+  startDate: 2019-11-16
+  endDate: 2019-11-16
+
+- title: Laundromat
+  type: M
+  startDate: 2019-11-15
+  endDate: 2019-11-15
+
+- title: Get Smart
+  type: M
+  startDate: 2019-11-14
+  endDate: 2019-11-14
+
+- title: The Mask
+  type: M
+  startDate: 2019-11-13
+  endDate: 2019-11-13
+
+- title: Bohemian Rhapsody
+  type: M
+  startDate: 2019-11-12
+  endDate: 2019-11-12
+
+- title: Bruce Almighty
+  type: M
+  startDate: 2019-11-11
+  endDate: 2019-11-11
+
+- title: The Mask
+  type: M
+  startDate: 2019-11-10
+  endDate: 2019-11-10
+
+- title: Atypical
+  link: https://www.netflix.com/title/80117540
+  type: TV
+  summary: Season 3, Ep. 6 - 10
+  startDate: 2019-11-04
+  endDate: 2019-11-05
+
+- title: The Handmaid's Tale
+  link: https://amzn.to/2LiMpCl
+  type: B
+  summary: by Margaret Atwood
+  startDate: 2019-11-15
+  summary: |
+    It's fiction but still I can draw parallels to today's world in many instances.
+
 - title: Designing accessible color systems
   link: https://stripe.com/gb/blog/accessible-color-systems
   type: A
