@@ -203,7 +203,8 @@ export default {
           <div class="list-disc list-outside pl-4 mt-2">
             <section v-for="item in media" :key="item.id" class="mt-4" style="display: list-item">
               <h4 class="text-bold">
-                <AppLink :to="item.link" external>{{ item.title }}</AppLink>
+                <AppLink v-if="item.link" :to="item.link" external>{{ item.title }}</AppLink>
+                <span v-else>{{ item.title }}</span>
               </h4>
 
               <p class="text-xs text-gray-900">
