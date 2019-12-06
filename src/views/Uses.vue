@@ -57,15 +57,15 @@ export default {
         </p>
       </section>
 
-      <section class="mt-6">
+      <section class="mt-6" id="desktop-monitor">
         <h3 class="text-xl text-bold">Desktop Monitor</h3>
 
         <p>
           <AppLink to="https://amzn.to/2JiSbDb" external
             >LG 27UK650-W 27 Inch 4K UHD IPS LED Monitor with HDR 10 and Adjustable Stand</AppLink
           >
-
-          This version doesn't have USB C connectivity, I would recommend something with with USB C PD.
+          mounted with <AppLink to="https://amzn.to/2LsSoEZ" external>Arm Desk Mount Stand</AppLink>. This version
+          doesn't have USB C connectivity, I would recommend something with with USB C PD.
         </p>
       </section>
 
