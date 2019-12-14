@@ -35,7 +35,7 @@
           <AppLink to="/uses" description="The tools I use everyday">Uses</AppLink>
         </li>
         <li class="mb-4">
-          <AppLink to="/media-log" description="A weekly log of media content I consume">Media Log</AppLink>
+          <AppLink to="/media-log" description="A weekly log of media content I consume">Watches</AppLink>
         </li>
       </ul>
     </nav>

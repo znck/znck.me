@@ -1,3 +1,19 @@
+- title: Head first into Composition API
+  description: >+
+    A live coding demo to showcase Vue Composition API and maybe address FUD if that’s still relevant.
+  tags:
+    - Vue 3.0
+    - Composition API
+    - Meetup
+  event:
+    name: VueBLR
+    website: https://blr.vue.community/
+    startDate: 2019-12-14
+    endDate: 2019-12-14
+    location: Bangalore, India
+  slides: https://speakerdeck.com/znck/head-first-into-composition-api
+  photo: https://speakerd.s3.amazonaws.com/presentations/b337c2957f3f4f959c68c781117bdee2/slide_0.jpg?583251
+
 - title: New Vue. New Compiler. Let's unpack!
   description: >+
     It's a compiler talk. Wait! Let me tell you something before you walk away, the compilation of Vue template may appear some dark-art, but when you look under the hood, it is a series of simple coordinated steps. In this talk, we would dive deep into the simple steps and how they coordinate to build the compilation process.
