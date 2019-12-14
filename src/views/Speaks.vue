@@ -27,6 +27,7 @@ export default {
     <template v-for="(talk, index) in talks">
       <article
         class="rounded overflow-hidden shadow-lg mt-6 border border-solid border-gray-200 relative"
+        :id="talk.title.replace(/[a-z0-9-]/gi, '-')"
         :key="index"
         :aria-label="'Talk: ' + talk.title"
         :aria-describedby="`talk-${index}-desc`"
