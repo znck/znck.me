@@ -1,19 +1,71 @@
 - title: The Making of a Manager
   link: https://amzn.to/2MGVAx7
   type: B
-  summary: by Joulie Zhuo
+  summary: by Julie Zhuo
   startDate: 2019-12-28
+  endDate: 2020-01-01
+  comment: |
+    The one thing, I found in this book that I find more important
+    than every thing else I have ever read is that Julie, through her
+    amazing book, taught me to ask questions, hard questions. And ask
+    for feedback.
+
+- title: Mercury Rising
+  link: https://www.imdb.com/title/tt0120749
+  type: M
+  startDate: 2019-12-27
+  endDate: 2019-12-27
+
+- title: Land of the Lost
+  link: https://www.imdb.com/title/tt0457400
+  type: M
+  startDate: 2019-12-26
+  endDate: 2019-12-26
+
+- title: The Equalizer
+  link: https://www.imdb.com/title/tt0455944
+  type: M
+  startDate: 2019-12-25
+  endDate: 2019-12-25
+
+- title: American History X
+  link: https://www.imdb.com/title/tt0120586
+  type: M
+  startDate: 2019-12-24
+  endDate: 2019-12-24
+
+- title: Scarface
+  link: https://www.imdb.com/title/tt0086250
+  type: M
+  startDate: 2019-12-24
+  endDate: 2019-12-24
+
+- title: The Witcher
+  summary: Season 1, Ep. 1 - 8
+  link: https://www.imdb.com/title/tt5180504
+  type: TV
+  startDate: 2019-12-23
+  endDate: 2019-12-23
+  comment: |
+    This is my first enconter with the witcher universe (I tried to play the game
+    too but it was too overwhelming for me), I absolutely loved it. I am planning
+    to read the books next.
 
 - title: The ugly truth of fast fashion
   link: https://www.youtube.com/watch?v=xGF3ObOBbac
-  type: M
+  type: TV
   startDate: 2019-12-01
   endDate: 2019-12-01
 
 - title: Marley & Me
+  link: https://www.imdb.com/title/tt0822832
   type: M
   startDate: 2019-11-19
   endDate: 2019-11-19
+  comment: |
+    I love how the movie is accurately titled "Marley & Me" as every character
+    in the movie had their own dynamic with Marley. And my dog, Dash, is very
+    simmilar to Marley.
 
 - title: Hancock
   link: https://amzn.to/34JMZ3R
@@ -21,40 +73,41 @@
   startDate: 2019-11-18
   endDate: 2019-11-18
 
-- title: Bounty Hunter
+- title: The Bounty Hunter
+  link: https://www.imdb.com/title/tt1038919
   type: M
   startDate: 2019-11-16
   endDate: 2019-11-16
 
 - title: Laundromat
+  link: https://www.imdb.com/title/tt5865326
   type: M
   startDate: 2019-11-15
   endDate: 2019-11-15
 
 - title: Get Smart
+  link: https://www.imdb.com/title/tt0425061
   type: M
   startDate: 2019-11-14
   endDate: 2019-11-14
 
 - title: The Mask
+  link: https://www.imdb.com/title/tt0110475
   type: M
   startDate: 2019-11-13
   endDate: 2019-11-13
 
 - title: Bohemian Rhapsody
+  link: https://www.imdb.com/title/tt1727824
   type: M
   startDate: 2019-11-12
   endDate: 2019-11-12
 
 - title: Bruce Almighty
+  link: https://www.imdb.com/title/tt0315327
   type: M
   startDate: 2019-11-11
   endDate: 2019-11-11
-
-- title: The Mask
-  type: M
-  startDate: 2019-11-10
-  endDate: 2019-11-10
 
 - title: Atypical
   link: https://www.netflix.com/title/80117540
