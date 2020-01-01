@@ -12,6 +12,7 @@ const MONTHS = [
   'June',
   'July',
   'August',
+  'September',
   'October',
   'November',
   'December',
@@ -65,10 +66,10 @@ export default {
         const startDate = new Date(item.startDate)
         const endDate = new Date(item.endDate)
 
-        const key = startDate.getUTCFullYear()
-        const subKey = MONTHS[startDate.getUTCMonth() - 1]
-        const otherKey = startDate.getUTCFullYear()
-        const otherSubKey = MONTHS[startDate.getUTCMonth() - 1]
+        const key = startDate.getFullYear()
+        const subKey = MONTHS[startDate.getMonth()]
+        const otherKey = endDate.getFullYear()
+        const otherSubKey = MONTHS[endDate.getMonth()]
 
         if (!(key in data)) {
           data[key] = {}
@@ -117,7 +118,20 @@ export default {
         }
       })
 
-      return data
+      const entries = Object.entries(data).filter(([key]) => Number.isFinite(Number(key)))
+
+      entries.sort(([a], [b]) => {
+        return Number(b) - Number(a)
+      })
+
+      Object.defineProperty(entries, 'inProgress', {
+        configurable: false,
+        enumerable: false,
+        value: data.inProgress,
+        writable: false,
+      })
+
+      return entries
     },
   },
 }
@@ -194,7 +208,7 @@ export default {
         </div>
       </article>
 
-      <article v-for="(months, year) in mediaByYearsAndMonths" :key="year" :aria-label="`My media log from ${year}`">
+      <article v-for="[year, months] in mediaByYearsAndMonths" :key="year" :aria-label="`My media log from ${year}`">
         <h2 :aria-label="`My media log from ${year}`" class="text-4xl text-bold mt-8">{{ year }}</h2>
 
         <section v-for="(media, month) in months" :key="month">
