@@ -187,8 +187,10 @@ export default {
         <h2 class="text-4xl text-bold mt-8">In progress</h2>
 
         <div class="list-disc list-outside pl-4 mt-2">
-          <section
+          <LinkToSelf
+            tag="section"
             v-for="item in mediaByYearsAndMonths.inProgress"
+            :id="item.type + '-' + item.title.replace(/[^a-z0-9]+/gi, '-') + '-in-progress'"
             :key="item.id"
             class="mt-4"
             style="display: list-item"
@@ -204,18 +206,31 @@ export default {
             </p>
 
             <blockquote class="text-sm text-gray-900 markdown" v-html="item.comment" />
-          </section>
+          </LinkToSelf>
         </div>
       </article>
 
-      <article v-for="[year, months] in mediaByYearsAndMonths" :key="year" :aria-label="`My media log from ${year}`">
+      <LinkToSelf
+        tag="article"
+        v-for="[year, months] in mediaByYearsAndMonths"
+        :key="year"
+        :aria-label="`My media log from ${year}`"
+        :id="'in-' + year"
+      >
         <h2 :aria-label="`My media log from ${year}`" class="text-4xl text-bold mt-8">{{ year }}</h2>
 
-        <section v-for="(media, month) in months" :key="month">
+        <LinkToSelf tag="section" v-for="(media, month) in months" :key="month" :id="'in-' + month + '-' + year">
           <h3 :aria-label="`My media log from ${month} ${year}`" class="text-2xl text-bold mt-4">{{ month }}</h3>
 
           <div class="list-disc list-outside pl-4 mt-2">
-            <section v-for="item in media" :key="item.id" class="mt-4" style="display: list-item">
+            <LinkToSelf
+              tag="section"
+              v-for="item in media"
+              :key="item.id"
+              class="mt-4"
+              style="display: list-item"
+              :id="item.type + '-' + item.title.replace(/[^a-z0-9]+/gi, '-') + '-' + year"
+            >
               <h4 class="text-bold">
                 <AppLink v-if="item.link" :to="item.link" external>{{ item.title }}</AppLink>
                 <span v-else>{{ item.title }}</span>
@@ -228,10 +243,10 @@ export default {
               </p>
 
               <blockquote class="text-sm text-gray-900 markdown" v-html="item.comment" />
-            </section>
+            </LinkToSelf>
           </div>
-        </section>
-      </article>
+        </LinkToSelf>
+      </LinkToSelf>
     </div>
 
     <aside class="text-sm text-gray-600 mt-10">

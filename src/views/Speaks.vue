@@ -27,7 +27,7 @@ export default {
     <template v-for="(talk, index) in talks">
       <article
         class="rounded overflow-hidden shadow-lg mt-6 border border-solid border-gray-200 relative"
-        :id="talk.title.replace(/[^a-z0-9-]/gi, '-')"
+        :id="(talk.title + '-' + talk.event.name).replace(/[^a-z0-9-]/gi, '-')"
         :key="index"
         :aria-label="'Talk: ' + talk.title"
         :aria-describedby="`talk-${index}-desc`"
@@ -62,7 +62,16 @@ export default {
           />
         </div>
         <div class="px-6 py-4">
-          <h2 class="font-bold text-xl mb-2">{{ talk.title }}</h2>
+          <h2 class="font-bold text-xl mb-2 self-link-container">
+            {{ talk.title }}
+            <a
+              :href="`#${(talk.title + '-' + talk.event.name).replace(/[^a-z0-9]+/gi, '-')}`"
+              class="self-link text-gray-500"
+              :aria-describedby="id"
+              title="Link to this section"
+              >#</a
+            >
+          </h2>
           <p v-if="talk.event" class="text-sm text-gray-500 -mt-2 mb-4">
             <AppLink :to="talk.event.website" external>
               <span class="text-gray-500 focus:text-gray-700 hover:text-gray-700">{{ talk.event.name }}</span>

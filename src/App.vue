@@ -26,16 +26,16 @@
           <AppLink to="https://znck.dev" description="My blog" external>Blog</AppLink>
         </li>
         <li class="mr-6 mb-4">
+          <AppLink to="/media-log" description="A weekly log of media content I consume">Media</AppLink>
+        </li>
+        <li class="mr-6 mb-4">
           <AppLink to="/projects" description="My projects">Projects</AppLink>
         </li>
         <li class="mr-6 mb-4">
           <AppLink to="/speaks" description="My conference talks">Talks</AppLink>
         </li>
-        <li class="mr-6 mb-4">
-          <AppLink to="/uses" description="The tools I use everyday">Uses</AppLink>
-        </li>
         <li class="mb-4">
-          <AppLink to="/media-log" description="A weekly log of media content I consume">Watches</AppLink>
+          <AppLink to="/uses" description="The tools I use everyday">Uses</AppLink>
         </li>
       </ul>
     </nav>
