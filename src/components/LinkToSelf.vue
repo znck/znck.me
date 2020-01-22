@@ -27,6 +27,10 @@ export default {
 </template>
 
 <style>
+.self-link-container:hover {
+  list-style: none;
+}
+
 .self-link-container > .self-link {
   opacity: 0;
   transition: opacity cubic-bezier(0.47, 0, 0.745, 0.715) 150ms;

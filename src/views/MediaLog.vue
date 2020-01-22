@@ -199,13 +199,13 @@ export default {
               <AppLink :to="item.link" external>{{ item.title }}</AppLink>
             </h4>
 
-            <p class="text-xs text-gray-900">
+            <p class="text-xs text-gray-900 font-semibold">
               {{ item.typeName }} — {{ item.summary ? item.summary + ' — ' : '' }}
               {{ item.type === 'P' ? 'Listened' : item.type === 'A' || item.type === 'B' ? 'Read' : 'Watched' }}
               {{ item.humanDate }}.
             </p>
 
-            <blockquote class="text-sm text-gray-900 markdown" v-html="item.comment" />
+            <blockquote class="text-sm text-gray-900 markdown mt-2" v-html="item.comment" />
           </LinkToSelf>
         </div>
       </article>
@@ -236,13 +236,13 @@ export default {
                 <span v-else>{{ item.title }}</span>
               </h4>
 
-              <p class="text-xs text-gray-900">
+              <p class="text-xs text-gray-900 font-semibold">
                 {{ item.typeName }} — {{ item.summary ? item.summary + ' — ' : '' }}
                 {{ item.type === 'P' ? 'Listened' : item.type === 'A' || item.type === 'B' ? 'Read' : 'Watched' }}
                 {{ item.humanDate }}.
               </p>
 
-              <blockquote class="text-sm text-gray-900 markdown" v-html="item.comment" />
+              <section class="text-sm text-gray-900 markdown mt-2" v-html="item.comment" />
             </LinkToSelf>
           </div>
         </LinkToSelf>
@@ -265,9 +265,24 @@ export default {
 <style>
 .markdown ul {
   list-style: circle;
-  padding-left: 1rem;
+  @apply pl-4;
+  @apply my-4;
 }
 .markdown ol {
   list-style: decimal;
+  @apply my-4;
+}
+
+.markdown q,
+.markdown blockquote {
+  @apply text-gray-700;
+  @apply text-lg;
+  @apply my-4;
+  @apply py-1;
+  @apply pl-4;
+  @apply border-l-2;
+  @apply border-gray-700;
+  @apply italic;
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 </style>
