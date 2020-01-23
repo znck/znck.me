@@ -285,4 +285,15 @@ export default {
   @apply italic;
   font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.markdown p {
+  @apply my-4;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  @apply font-semibold;
+  @apply mt-4;
+}
 </style>
