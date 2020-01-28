@@ -63,53 +63,57 @@ export default {
       })
 
       this.filteredMedia.forEach(item => {
-        const startDate = new Date(item.startDate)
-        const endDate = new Date(item.endDate)
+        if (item.startDate) {
+          const startDate = new Date(item.startDate)
+          const key = startDate.getFullYear()
 
-        const key = startDate.getFullYear()
-        const subKey = MONTHS[startDate.getMonth()]
-        const otherKey = endDate.getFullYear()
-        const otherSubKey = MONTHS[endDate.getMonth()]
+          if (!(key in data)) {
+            data[key] = {}
+          }
 
-        if (!(key in data)) {
-          data[key] = {}
-        }
+          const subKey = MONTHS[startDate.getMonth()]
 
-        if (!(otherKey in data)) {
-          data[otherKey] = {}
-        }
+          if (!(subKey in data[key])) {
+            data[key][subKey] = []
+          }
 
-        if (!(subKey in data[key])) {
-          data[key][subKey] = []
-        }
+          let humanDate = 'from ' + startDate.toDateString() + ' (in progress)'
 
-        if (!(otherSubKey in data[key])) {
-          data[otherKey][otherSubKey] = []
-        }
+          const processedItem = {
+            ...item,
+            startDate,
+            humanDate,
+            year: key,
+            month: subKey,
+            typeName: TYPES[item.type],
+          }
 
-        const humanDate =
-          startDate.getTime() === endDate.getTime()
-            ? 'on ' + startDate.toDateString()
-            : !item.endDate
-            ? 'from ' + startDate.toDateString() + ' (in progress)'
-            : 'from ' + startDate.toDateString() + ' to ' + endDate.toDateString()
+          if (item.endDate) {
+            const endDate = new Date(item.endDate)
 
-        const processedItem = {
-          ...item,
-          startDate,
-          endDate,
-          humanDate,
-          year: key,
-          month: subKey,
-          typeName: TYPES[item.type],
-        }
+            const otherKey = endDate.getFullYear()
+            const otherSubKey = MONTHS[endDate.getMonth()]
 
-        if (!item.endDate) {
-          data.inProgress.push(processedItem)
-        } else {
-          data[key][subKey].push(processedItem)
-          if (key !== otherKey || subKey !== otherSubKey) {
-            data[otherKey][otherSubKey].push(processedItem)
+            if (!(otherKey in data)) {
+              data[otherKey] = {}
+            }
+
+            if (!(otherSubKey in data[otherKey])) {
+              data[otherKey][otherSubKey] = []
+            }
+
+            processedItem.humanDate =
+              startDate.getTime() === endDate.getTime()
+                ? 'on ' + startDate.toDateString()
+                : 'from ' + startDate.toDateString() + ' to ' + endDate.toDateString()
+
+            data[key][subKey].push(processedItem)
+
+            if (key !== otherKey || subKey !== otherSubKey) {
+              data[otherKey][otherSubKey].push(processedItem)
+            }
+          } else {
+            data.inProgress.push(processedItem)
           }
         }
 

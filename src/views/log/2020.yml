@@ -1,29 +1,29 @@
-- title: How to Speak
-  summary: by Patrick Winston
-  link: https://www.youtube.com/watch?v=Unzc731iCUY
-  type: L
-  startDate: 2020-01-02
-  endDate: 2020-01-02
-  comment: |
-    My key takeaways are:
-      - _Don't start with a joke._
-      - _Build fence around your ideas._
-      - _Talk in cycles._
-      - _Provide verbal punctuations, so lost can join back._
-      - _Ask a question._
-      - _Every presentation has too many slides and too many words._
-      - _Hapax Legomenon complex silde._
-      - _Don't thank._
-      - _Maybe end with a joke._
-      - _Your ideas are like your children, you don't want them going to rags._
+- title: Ikigai
+  link: https://amzn.to/37ArEv5
+  type: B
+  summary: by Héctor García and Francesc Mairalles
+  startDate: 2020-01-28
+
+- title: Clean Code
+  link: https://amzn.to/2GuoDAx
+  type: B
+  summary: by Robert C. Martin
+  startDate: 2020-01-10
 
 - title: Unthink
   link: https://amzn.to/2TLNlEs
   type: B
   summary: by Chris Paley
   startDate: 2020-01-21
-  startDate: 2020-01-27
+  endDate: 2020-01-27
   comment: |
+    ## Notes
+
+    Imitation can be a powerful tool to be liked and find who likes you.
+    Repetation can convert non-believers into believers.
+    Subliminal message can make people do things.
+    Family photos in workplace make people work harder.
+
     ## Highlights
 
     - We need to be able to see ourselves not as we really are but as other people perceive us to be.
@@ -60,8 +60,21 @@
   comment: |
     I found it as good as the first season. It is informative, conflictive, quirky, excellently conveys so many perfectives and throughout enjoyable.
 
-- title: Ikigai
-  link: https://amzn.to/37ArEv5
-  type: B
-  summary: by Héctor García and Francesc Mairalles
-  startDate: 2020-01-28
+- title: How to Speak
+  summary: by Patrick Winston
+  link: https://www.youtube.com/watch?v=Unzc731iCUY
+  type: L
+  startDate: 2020-01-02
+  endDate: 2020-01-02
+  comment: |
+    My key takeaways are:
+      - _Don't start with a joke._
+      - _Build fence around your ideas._
+      - _Talk in cycles._
+      - _Provide verbal punctuations, so lost can join back._
+      - _Ask a question._
+      - _Every presentation has too many slides and too many words._
+      - _Hapax Legomenon complex silde._
+      - _Don't thank._
+      - _Maybe end with a joke._
+      - _Your ideas are like your children, you don't want them going to rags._
