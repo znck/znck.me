@@ -13,6 +13,4 @@ log.sort((a, b) => {
   return new Date(b.endDate).getTime() - new Date(a.endDate).getTime()
 })
 
-console.log(log)
-
 export default log

@@ -68,10 +68,10 @@ export default {
           const key = startDate.getFullYear()
 
           if (!(key in data)) {
-            data[key] = {}
+            data[key] = []
           }
 
-          const subKey = MONTHS[startDate.getMonth()]
+          const subKey = startDate.getMonth()
 
           if (!(subKey in data[key])) {
             data[key][subKey] = []
@@ -92,10 +92,10 @@ export default {
             const endDate = new Date(item.endDate)
 
             const otherKey = endDate.getFullYear()
-            const otherSubKey = MONTHS[endDate.getMonth()]
+            const otherSubKey = endDate.getMonth()
 
             if (!(otherKey in data)) {
-              data[otherKey] = {}
+              data[otherKey] = []
             }
 
             if (!(otherSubKey in data[otherKey])) {
@@ -122,7 +122,15 @@ export default {
         }
       })
 
-      const entries = Object.entries(data).filter(([key]) => Number.isFinite(Number(key)))
+      const entries = Object.entries(data)
+        .filter(([key]) => Number.isFinite(Number(key)))
+        .map(([year, months]) => {
+          const media = months.map((items, index) => [MONTHS[index], items || []]).filter(([, items]) => items.length)
+
+          media.reverse()
+
+          return [year, media]
+        })
 
       entries.sort(([a], [b]) => {
         return Number(b) - Number(a)
@@ -223,7 +231,7 @@ export default {
       >
         <h2 :aria-label="`My media log from ${year}`" class="text-4xl text-bold mt-8">{{ year }}</h2>
 
-        <LinkToSelf tag="section" v-for="(media, month) in months" :key="month" :id="'in-' + month + '-' + year">
+        <LinkToSelf tag="section" v-for="[month, media] in months" :key="month" :id="'in-' + month + '-' + year">
           <h3 :aria-label="`My media log from ${month} ${year}`" class="text-2xl text-bold mt-4">{{ month }}</h3>
 
           <div class="list-disc list-outside pl-4 mt-2">
