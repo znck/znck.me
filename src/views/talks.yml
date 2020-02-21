@@ -19,7 +19,7 @@
     It's a compiler talk. Wait! Let me tell you something before you walk away, the compilation of Vue template may appear some dark-art, but when you look under the hood, it is a series of simple coordinated steps. In this talk, we would dive deep into the simple steps and how they coordinate to build the compilation process.
 
     **Overview:**
-    
+
     - Steps in Vue compilation
     - The Vue compiler
       - The template compiler
@@ -41,6 +41,7 @@
     endDate: 2020-02-21
     location: Amsterdam, Netherlands
   photo: /assets/vue-amsterdam.jpg
+  slides: https://speakerdeck.com/znck/new-vue-new-compiler-lets-unpack
 
 - title: Building your own presentation framework
   description: >+
@@ -76,16 +77,16 @@
 
 - title: Building for Developer Experience
   description: |-
-      At Myntra, we have hundreds of micro applications built over a few years by a continuously changing team. Different people brought different ideas, and these applications became an amalgam of different design processes, themes, libraries, and tools with lack of any governing principles. These differences and no governance led to multiple forks in design and experience. Now, we have a solution which unifies the forks, makes it easier to deliver consistent user experience and much more.
-      
-      In this talk, I share the problems we faced: 
-      - In maintaining a component library.
-      - In supporting hundreds of applications.
-      - In communicating design decisions.
+    At Myntra, we have hundreds of micro applications built over a few years by a continuously changing team. Different people brought different ideas, and these applications became an amalgam of different design processes, themes, libraries, and tools with lack of any governing principles. These differences and no governance led to multiple forks in design and experience. Now, we have a solution which unifies the forks, makes it easier to deliver consistent user experience and much more.
 
-      And how we ended up building tools for fixing broken developer experience, which in turn addressed the issues of user experience inconsistencies.
+    In this talk, I share the problems we faced: 
+    - In maintaining a component library.
+    - In supporting hundreds of applications.
+    - In communicating design decisions.
 
-      In short, this is a story of re-making of a design system until it made sense to everyone.
+    And how we ended up building tools for fixing broken developer experience, which in turn addressed the issues of user experience inconsistencies.
+
+    In short, this is a story of re-making of a design system until it made sense to everyone.
 
   tags:
     - React
@@ -107,9 +108,9 @@
     "How to get involved with Vue 3?".
   tags:
     - Vue 3.0
-    - 'JSFoo: VueDay'
+    - "JSFoo: VueDay"
   event:
-    name: 'JSFoo: VueDay'
+    name: "JSFoo: VueDay"
     website: https://jsfoo.in/2019-vueday/
     startDate: 2019-08-30
     endDate: 2019-08-30
@@ -117,7 +118,7 @@
   youtube: Om03OUxIaAI
   slides: https://speakerdeck.com/znck/future-of-vue-jsfoo-vueday-2019
 
-- title: 'Demystifying: The Dark Art of SFC Compilation'
+- title: "Demystifying: The Dark Art of SFC Compilation"
   description: >+
     Vue single file components empowers developers with the ability to write declarative 
     render functions using plain HTML-like syntax. The so-called SFCs also provide features 
@@ -131,7 +132,7 @@
     - Vue Template Compiler
     - VueConf
   event:
-    name: 'VueConf US'
+    name: "VueConf US"
     website: https://vueconf.us/2019
     startDate: 2019-03-25
     endDate: 2019-03-27
@@ -139,7 +140,7 @@
   youtube: Ceo771OXaCY
   slides: https://vueconf19-compiler.surge.sh
 
-- title: 'Demystifying: The Dark Art of SFC Compilation'
+- title: "Demystifying: The Dark Art of SFC Compilation"
   description: >+
     Vue single file components empowers developers with the ability to write declarative 
     render functions using plain HTML-like syntax. The so-called SFCs also provide features 
@@ -153,7 +154,7 @@
     - Vue Template Compiler
     - ConnectTECH
   event:
-    name: 'ConnectTECH'
+    name: "ConnectTECH"
     website: https://connect.tech/2018
     startDate: 2018-10-15
     endDate: 2018-10-15
@@ -161,7 +162,7 @@
   youtube: R46xNMhJqoE
   slides: https://sfc-compilation-connect-tech.surge.sh
 
-- title: 'A deep dive in SFC compilation'
+- title: "A deep dive in SFC compilation"
   description: >+
     Vue single file components empowers developers with the ability to write declarative 
     render functions using plain HTML-like syntax. The so-called SFCs also provide features 
@@ -198,7 +199,7 @@
   photo: https://pbs.twimg.com/media/DauWsGfUwAAOGfC?format=jpg&name=large
   slides: https://github.com/znck/demo-eh-progressive
 
-- title: 'React to Vue: why and how?'
+- title: "React to Vue: why and how?"
   description: >+
     A head-on comparison of the two trending UI libraries to discuss their 
     similarities, differences and design decisions undertaken.
@@ -207,7 +208,7 @@
     - Migrating to Vue
     - React
   event:
-    name: 'ReactFoo'
+    name: "ReactFoo"
     website: https://reactfoo.in/2018-hyderabad/
     startDate: 2018-03-17
     endDate: 2018-03-17
@@ -215,14 +216,14 @@
   youtube: dY3sRuSut3g
   slides: https://speakerdeck.com/znck/react-to-vue-why-and-how
 
-- title: 'Collocation in modern web'
+- title: "Collocation in modern web"
   description: >+
     Notes on using collocation in modern web applications.
   tags:
     - Vue
     - Single File Component
   event:
-    name: 'GDG Mumbai'
+    name: "GDG Mumbai"
     website: https://www.meetup.com/OpenSourceDevs-Mumbai/events/244232596/
     startDate: 2017-10-28
     endDate: 2017-10-28
@@ -230,14 +231,14 @@
   youtube: IZazo2BUm5A
   slides: https://speakerdeck.com/znck/collocation-in-modern-web
 
-- title: 'Framework Wars: Vue vs Meteor vs Angular'
+- title: "Framework Wars: Vue vs Meteor vs Angular"
   description: >+
     Three speakers, three frameworks.
 
     Rahul Kadyan on why you should use Vue.js.
 
     Sapna Upreti on the features and strengths of Meteor.
-    
+
     Vinci Rufus on why Angular is the right choice.
   tags:
     - Vue
@@ -245,7 +246,7 @@
     - Meteor
     - Angular
   event:
-    name: 'JSFoo'
+    name: "JSFoo"
     website: https://jsfoo.in/2017/
     startDate: 2017-09-15
     endDate: 2017-09-16
