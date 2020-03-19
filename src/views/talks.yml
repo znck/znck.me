@@ -1,3 +1,21 @@
+- title: Inversion of Control in Vue App
+  description: >+
+    Using dependency injection for building loosely coupled applications. 
+    The talk focuses on various inversion of control specifically dependency injection, and
+    how it can be implemented in an application.
+  tags:
+    - Dependency Injection
+    - Provide/Inject
+    - Meetup
+  event:
+    name: VueBLR
+    website: https://www.vuemeetup.com/#/
+    startDate: 2020-03-20
+    endDate: 2020-03-20
+    location: Online
+  slides: https://speakerdeck.com/znck/inversion-of-control-in-a-vue-application
+  youtube: YlDpyK2fRhA
+
 - title: Head first into Composition API
   description: >+
     A live coding demo to showcase Vue Composition API and maybe address FUD if that’s still relevant.
