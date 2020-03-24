@@ -58,7 +58,6 @@
     startDate: 2020-02-20
     endDate: 2020-02-21
     location: Amsterdam, Netherlands
-  photo: /assets/vue-amsterdam.jpg
   youtube: k-mSbrj_fjU
   slides: https://speakerdeck.com/znck/new-vue-new-compiler-lets-unpack
 
