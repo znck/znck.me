@@ -42,8 +42,7 @@ export default {
     v-bind="props"
     :aria-label="description"
     :aria-describedby="`link${_uid}desc`"
-    role="link"
-    class="text-green-500 hover:text-green-800 cursor-pointer inline-flex items-center"
+    class="text-green-600 hover:text-green-900 cursor-pointer inline-flex items-center"
   >
     <slot />
 
