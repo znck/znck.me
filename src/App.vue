@@ -5,7 +5,7 @@
 
     <header class="p-4 flex flex-col items-center">
       <img
-        src="https://avatars.io/twitter/znck0"
+        src="https://twitter-avatar.now.sh/znck0"
         alt="Rahul Kadyan"
         class="rounded-full object-cover w-24 h-24 bg-gray-300 my-6 overflow-hidden"
       />
