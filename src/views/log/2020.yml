@@ -1,8 +1,41 @@
+- title: Dark
+  link: https://www.netflix.com/title/80100172
+  summary: S1
+  type: TV
+  startDate: 2020-06-30
+
+  - title: "The Morning Show"
+  link: https://tv.apple.com/in/show/the-morning-show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m?ctx_brand=tvs.sbd.4000
+  summary: S1
+  type: TV
+  startDate: 2020-06-27
+  endDate: 2020-06-29
+
+- title: Indiana Jones and the Raiders of the Lost Ark
+  link: https://www.netflix.com/title/60011649
+  type: M
+  startDate: 2020-06-27
+  endDate: 2020-06-27
+
+- title: Bulbbul
+  link: https://www.netflix.com/title/60011649
+  type: M
+  startDate: 2020-06-25
+  endDate: 2020-06-25
+
+- title: "The Big Bang Theory"
+  link: https://www.netflix.com/title/70143830
+  summary: S1 - S12
+  type: TV
+  startDate: 2020-03-19
+  endDate: 2020-06-20
+
 - title: Rhythm Section
   link: https://amzn.to/2U2G82H
   type: B
   summary: by Mark Burnell
   startDate: 2020-03-04
+  endDate: 2020-04-10
 
 - title: "Pandemic: How to Prevent an Outbreak"
   link: https://www.netflix.com/title/81048758
