@@ -27,7 +27,7 @@ export default {
         Recently, I have been exploring web accessibility and building applications for universal access.
       </p>
 
-      <p class="mb-6">
+      <!-- <p class="mb-6">
         I provide <strong>consulting and training services</strong> for Vue, accessibility and web performance in
         general. Please
         <AppLink
@@ -36,7 +36,7 @@ export default {
           >email me</AppLink
         >
         if you would like to work with me!
-      </p>
+      </p> -->
 
       <!-- Where did I work? -> Myntra, Headout, EasyEcom, Scalex, Breve Labs, INCF -->
       <section>
