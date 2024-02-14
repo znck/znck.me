@@ -1,5 +1,5 @@
 <script>
-import Layout from '@/layouts/default.vue'
+import Layout from '../layouts/default.vue'
 import log from './log'
 import marked from 'marked'
 

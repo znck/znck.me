@@ -1,24 +1,7 @@
 # znck.github.io
 
-## Project setup
-```
-pnpm install
-```
+A simple website about me. 
 
-### Compiles and hot-reloads for development
-```
-pnpm run serve
-```
+## Development
 
-### Compiles and minifies for production
-```
-pnpm run build
-```
-
-### Lints and fixes files
-```
-pnpm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Dev server is running at [http://localhost:5173/](http://localhost:5173/)

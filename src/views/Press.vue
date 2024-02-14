@@ -1,5 +1,5 @@
 <script>
-import Layout from '@/layouts/default.vue'
+import Layout from '../layouts/default.vue'
 export default {
   components: { Layout },
 }
@@ -25,13 +25,13 @@ export default {
 
     <section class="flex text-center flex-col md:flex-row items-center">
       <figure class=" md:mr-6">
-        <img class="w-64 h-64 rounded-full my-4" src="@/assets/press/photo.jpg" alt="Rahul Kadyan" />
+        <img class="w-64 h-64 rounded-full my-4" src="../assets/press/photo.jpg" alt="Rahul Kadyan" />
 
         <figcaption>Photo</figcaption>
       </figure>
 
       <figure>
-        <img class="w-64 h-64 rounded-full my-4" src="@/assets/press/avatar.png" alt="A green box" />
+        <img class="w-64 h-64 rounded-full my-4" src="../assets/press/avatar.png" alt="A green box" />
 
         <figcaption>Avatar</figcaption>
       </figure>

@@ -5,12 +5,12 @@
 
     <header class="p-4 flex flex-col items-center">
       <img
-        src="https://twitter-avatar.now.sh/znck0"
+        src="./assets/press/photo.jpg"
         alt="Rahul Kadyan"
         class="rounded-full object-cover w-24 h-24 bg-gray-300 my-6 overflow-hidden"
       />
       <h1 class="text-5xl font-bold">Rahul Kadyan</h1>
-      <h2 class="text-3xl">Vue Core Team Member</h2>
+      <h2 class="text-xl">Software Engineer, Grammarly</h2>
     </header>
 
     <nav
@@ -25,18 +25,15 @@
         <li class="mr-6 mb-4">
           <AppLink to="https://znck.dev" description="My blog" external>Blog</AppLink>
         </li>
-        <li class="mr-6 mb-4">
-          <AppLink to="/media-log" description="A weekly log of media content I consume">Media</AppLink>
-        </li>
-        <li class="mr-6 mb-4">
+        <!-- <li class="mr-6 mb-4">
           <AppLink to="/projects" description="My projects">Projects</AppLink>
-        </li>
+        </li> -->
         <li class="mr-6 mb-4">
           <AppLink to="/speaks" description="My conference talks">Talks</AppLink>
         </li>
-        <li class="mb-4">
+        <!-- <li class="mb-4">
           <AppLink to="/uses" description="The tools I use everyday">Uses</AppLink>
-        </li>
+        </li> -->
       </ul>
     </nav>
 
