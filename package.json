@@ -2,6 +2,9 @@
   "name": "znck.github.io",
   "version": "0.1.0",
   "packageManager": "pnpm@8.15.1",
+  "engines": {
+    "node": "^20.11.0"
+  },
   "private": true,
   "scripts": {
     "dev": "vite",
