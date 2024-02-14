@@ -1,19 +1,7 @@
-<script>
+<script setup>
 import Layout from '../layouts/default.vue'
 import projects from './projects.yml'
-import marked from 'marked'
-
-export default {
-  components: { Layout },
-  computed: {
-    projects() {
-      return projects
-    },
-  },
-  methods: {
-    marked,
-  },
-}
+import { marked } from 'marked'
 </script>
 
 <template>

@@ -18,11 +18,6 @@ const routes = [
     name: 'speaks',
     component: defineAsyncComponent(() => import('./views/Speaks.vue')),
   },
-  // {
-  //   path: '/uses',
-  //   name: 'uses',
-  //   component: defineAsyncComponent(() => import('./views/Uses.vue')),
-  // },
   {
     path: '/press',
     name: 'press',

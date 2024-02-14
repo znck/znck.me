@@ -1,8 +1,5 @@
-<script>
+<script setup>
 import Layout from '../layouts/default.vue'
-export default {
-  components: { Layout },
-}
 </script>
 
 <template>
@@ -17,14 +14,14 @@ export default {
     <h2 class="text-2xl mt-6 mb-4 font-bold text-gray-800">Biography</h2>
 
     <p class="my-4">
-      Rahul Kadyan is a Software Engineer and Vue Core Team Member. He is super enthusiastic about building accessible
-      web apps, the compilation process of .vue files, and tooling for the Vue ecosystem.
+      Rahul Kadyan is a Software Engineer at Grammarly. He is passionate about building accessible web apps, developer
+      tooling, and open-source.
     </p>
 
     <h2 class="text-2xl mt-6 mb-4 font-bold text-gray-800">Photos</h2>
 
     <section class="flex text-center flex-col md:flex-row items-center">
-      <figure class=" md:mr-6">
+      <figure class="md:mr-6">
         <img class="w-64 h-64 rounded-full my-4" src="../assets/press/photo.jpg" alt="Rahul Kadyan" />
 
         <figcaption>Photo</figcaption>

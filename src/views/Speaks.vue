@@ -1,19 +1,7 @@
-<script>
+<script setup>
 import Layout from '../layouts/default.vue'
 import talks from './talks.yml'
-import marked from 'marked'
-
-export default {
-  components: { Layout },
-  computed: {
-    talks() {
-      return talks
-    },
-  },
-  methods: {
-    marked,
-  },
-}
+import { marked } from 'marked'
 </script>
 
 <template>
